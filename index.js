@@ -1,7 +1,7 @@
 ﻿const express = require('express');
 const path = require('path');
 const serveStatic = require('serve-static');
-const config = require('./config');
+
 const https = require('https');
 
 const app = express();
@@ -15,7 +15,7 @@ app.use(express.static(path.join(__dirname, 'client/build'), {
 app.get('/api/passwords', (req, res) => {
     const count = 5;
 
-    const greeting = { message: 'hello world!', secret: process.env.SECRET_CODE || config.secret_code };
+    const greeting = { message: 'hello world!', secret: process.env.SECRET_CODE};
 
     //// Return them as json
     res.json(greeting);
@@ -25,7 +25,7 @@ app.get('/api/passwords', (req, res) => {
 app.get('/api/strava', (req, res) => {
     const fromDate = 1494716400;
     const toDate = 1495321200;
-    const access_token = process.env.STRAVA_ACCESS_TOKEN || config.strava_access_token;
+    const access_token = process.env.STRAVA_ACCESS_TOKEN;
     const url = `https://www.strava.com/api/v3/athlete/activities?after=${fromDate}&before=${toDate}&page=1&per_page=30&access_token=${access_token}`;
    
     //todo: iterate through the pages of results
@@ -59,7 +59,7 @@ app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname + '/client/build/index.html'));
 });
 
-const port = process.env.PORT || config.app.port;
+const port = 3000;
 app.listen(port);
 
 
