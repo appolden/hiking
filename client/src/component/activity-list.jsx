@@ -75,18 +75,20 @@ class ActivityList extends Component {
       </div>
     ));
 
+          //    <div>
+          //  <label>
+          //    <input type="radio" value="metric" />
+          //    Metric
+          //  </label>
+          //  <label>
+          //    <input type="radio" value="imperial" />
+          //    Imperial
+          //  </label>
+          //</div>
+
     return (
       <div className="col-md-4 activityList">
-        <div>
-          <label>
-            <input type="radio" value="metric" />
-            Metric
-          </label>
-          <label>
-            <input type="radio" value="imperial" />
-            Imperial
-          </label>
-        </div>
+
         <div id="activityList">{activityRow}</div>
       </div>
     );

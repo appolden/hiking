@@ -5,6 +5,7 @@ import NavBar from './component/navbar.jsx';
 import BivouacList from './component/bivouac-list.jsx';
 import MapContainer from './component/map.jsx';
 import ActivityList from './component/activity-list.jsx';
+import TrailsSummary from './component/trails-summary.jsx';
 
 class PctTrail extends Component {
   render() {
@@ -79,6 +80,8 @@ class TrailView extends Component {
   }
 }
 
+
+
 class App extends Component {
   render() {
     return (
@@ -86,7 +89,7 @@ class App extends Component {
         <React.Fragment>
           <NavBar />
           <div className="container">
-            <Route exact path="/" component={HwpTrail} />
+            <Route exact path="/" component={TrailsSummary} />
             <Route exact path="/trail/hwp" component={HwpTrail} />
             <Route exact path="/trail/pct" component={PctTrail} />
             <Route exact path="/trail/gr5" component={Gr5Trail} />
