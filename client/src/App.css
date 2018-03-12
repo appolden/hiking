@@ -1,0 +1,58 @@
+.map {
+  height: 700px;
+  border: 2px solid black;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.selected {
+  background: #0099ff;
+  border-radius: 5px;
+  border: 2px solid #0099ff;
+  font-weight: bold;
+}
+
+#activityList {
+  max-height: 700px;
+  overflow-y: scroll;
+  cursor: pointer;
+}
+
+.activityItem {
+  border-radius: 5px;
+  border: 2px solid #ffffff;
+}
+
+.activityItem:hover {
+  background: #00ccff;
+  border-radius: 5px;
+  border: 2px solid #00ccff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media screen and (max-height: 740px) and (max-width: 960px) {
+  .map {
+    height: 350px;
+  }
+
+  .activityList {
+    max-height: 400px;
+    overflow-y: scroll;
+  }
+}
+
+@media screen and (max-height: 480px) {
+  .map {
+    height: 300px;
+  }
+
+  .activityList {
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+}
+
+p {
+  white-space: pre-wrap;
+}

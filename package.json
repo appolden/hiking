@@ -1,0 +1,15 @@
+{
+  "name": "hiking-server",
+  "version": "0.1.0",
+  "engines": {
+    "node": "8.9.4"
+  },
+  "private": true,
+  "dependencies": {
+    "express": "^4.16.2"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "heroku-postbuild": "cd client && npm install && npm run build"
+  }
+}

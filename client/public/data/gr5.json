@@ -1,0 +1,72 @@
+﻿[
+  {
+    "id": 1041140880,
+    "name": "Le Lignon à Le Brévent",
+    "start_date_local": "2017-06-17T07:20:49+01:00",
+    "map": {
+      "summary_polyline": "mk{wGsvhh@nBvD~JdFrBhElIfFxB~FrAeAvJ|LNwBtBdBf@gAuAoH_DeCqBwJkB_BvCmDcFeDmAwYoEuC`@oG{CkRn@cJ`BiCdQyBjBoFzF_EjGoLpGKdH{El@yBs@oDxEaD`GsMAkHpAiFbFsDfGhCo@y^nCCo@{CdAqAhHDzEoDbIpJnA}EfNgBhGoJbJ`@`EcChMxJhJi@lChHxDTvGzGfBaBpMbD|AcGvGbGl@wE~CdFTaBtDjAFiSdDcEjSzKbBsFaEoTbFkN~CcSeCeGH{K|Ka]]sBpJqOt@eEeAuF}FkCqDiGo@aEpCNyBoGrAcBkCsErd@`KvMiM`FkJn\\kNdFeJxLqCfOfFdH{EhI~@h@sC_AwA|BR\\sAgAw@bBC[aDzH}BjAoFfGsBmBiAbJaG|@eJf@lH`GnTjEvEfInB~BmClB`BfD_A~DxCvCa@R_D"
+    },
+    "elapsed_time": 31317,
+    "moving_time": 21858,
+    "distance": 20925.6,
+    "total_elevation_gain": 2179.1,
+    "StartLatitude": 46.02,
+    "StartLongitude": 6.77
+  },
+  {
+    "id": 1041140270,
+    "name": "Chaux Palin à Chalet du Lignon",
+    "start_date_local": "2017-06-16T08:39:49+01:00",
+    "map": {
+      "summary_polyline": "ya{xGwysh@fGdDX_EpLmGfKdgA|KfFxL_RnPaD`KdZ`MdNm@~FdC|A|BpT~B_DdOjU`Pg@bIzNxFErDtLvKIxCnFzEeCnF`MhBw@aCzLtNnKw@fExH`KrAvSjDtG_D|MjCpCaDLjDbFpDmEuA~JhPmZpTd^dI|CbChVeCrT~D~IeFfCvRjOlNbAD|PhLbAzPrQ|B~J~YtVxCnFD|NjCMjB~GvAxi@~TsPbJzD|IgDTwDfG|HbSsPhUfK~EgNyApJ`BlAd[tFbHkDdBjFlRnBlc@jV`Mb\\fD{FtBvDnBdRuC~HhAvIdDkUlMg@q@wFvXx[vCyStYyH|QoYba@qLxT_m@hNcKtJsSsDqYlLmInAg]jEyJjhA_FhHiFfAiQbNoEfC{I~NcCm@|HxU@~DsAbDsQdEd@|BwFxAlEbRBgBjMdLfT"
+    },
+    "elapsed_time": 40019,
+    "moving_time": 26290,
+    "distance": 33143.2,
+    "total_elevation_gain": 1367.1,
+    "StartLatitude": 46.18,
+    "StartLongitude": 6.82
+  },
+  {
+    "id": 1037996014,
+    "name": "Chapelle D'abondance à Chaupalin gîte",
+    "start_date_local": "2017-06-15T09:44:16+01:00",
+    "map": {
+      "summary_polyline": "oaqyGmxlh@fCyUhFcK\\qGMlG`N~DOwHtCyJ`DgAdAkFhEkCwAeK`@wWdDo@IoJnBqCrHfLxHiCLhEfAp@bBmGdApIdHfJnBc@K|ClB~BdELb@zCmIoHGgHjByEtKnBfBgCl@pAvFgBfG{HxLiA`FeGhCYl@mCnHaHpCzF?xHjLaC`IbOlBxJtFG`CjZ|@lBdAu@l@dExGlBkDpPc@jJ`CiFhFpFxCeKnBYrDlB_BfM~FgBbH`JtF_IdBvBj]hH}@RvBtDsBo@bDhGXrFgF~m@\\`Bv@cCZnFfDnH|i@aZj]nKfB|HdDkA`BvCnHg@fDhDpBzJ`I`IxEnAnLeIjJVbFeDvGtBg@lEvA~AnJ{I`HuQrKqIvEsU|QsOjBwHzHsGzL^bBoHrFyHjMgGrKaSzEuBvAiErD{BbEkOP}HlGkZ?iZ~@wFmDySFmHfCkLdPoIvG`AG}BbB[vA{PtBvLzAhB|QxB|Ai@`BqGtF|CbN_D{AiGnAc@"
+    },
+    "elapsed_time": 29719,
+    "moving_time": 21460,
+    "distance": 24087.5,
+    "total_elevation_gain": 1668.3,
+    "StartLatitude": 46.3,
+    "StartLongitude": 6.79
+  },
+  {
+    "id": 1036155701,
+    "name": "Vinzier à la Chapelle d'abondance",
+    "start_date_local": "2017-06-14T06:49:57+01:00",
+    "map": {
+      "summary_polyline": "{o{yGw{kg@xCbLtDzA~HwF`FtHnBaBaCiLpCaGXmPoFyD{E}S{CwCvCiLfFwAUaCvLfE~Ai@b@_Ek@oE_D}AZwAkACcIsUkGsIcE}Rh@wMoAqBo@}JxA_RO}b@eBoTdEqHl@gJxHmMc@yOhAsAb@cOmBgQeE}Fi@eFrJyOpBkJWcJvB_MHqVxEaX}@kPrVsUjDoGgB`@\\wEvJyENoBjEIcBwAqDwOFyJuDmHnA{Jq@cO{NeJN_HcAiCbAgAcEeN{A}N_EaFgGuRmEmYeCcDm@vBmE}BN{c@lBaEPcN~AyFuE_CmB{H_B_RdDyGLmEcJaWZsEyAiD`@kGeAmEfXuJjC`D|N_CtHlAvP}HjDyJ`IoKpKsCrMjCcBcGrDsH~@x@zBgOpIqJd@_CsAqG`Dm@jDxDrVcMvBqJrLiJrE_MJ~DtAuAfB{IbDcCgCkIxCd@\\aFaAgBp@cBdI`GvRpCdIy@AmAP~ApA{FdXiNpGhAzUoDbQ`@jLzG"
+    },
+    "elapsed_time": 33688,
+    "moving_time": 23463,
+    "distance": 25058.5,
+    "total_elevation_gain": 1999.8,
+    "StartLatitude": 46.35,
+    "StartLongitude": 6.62
+  },
+  {
+    "id": 1036155638,
+    "name": "Thonon les Bains à Vinzier",
+    "start_date_local": "2017-06-13T09:24:29+01:00",
+    "map": {
+      "summary_polyline": "wn_zG{{pf@t@_HxU}CtFoJ|JbQxp@{y@_OqJiEsV`GkWpJtC{IaTv@e^aGkPmDnIIkHzHiQgJiEd^aK~TaVdMfDfFyX{@_TjLwFxBaGeCwGvHrD|@dG~QsNhEuTgBct@bKoIu@wMnNy_@xCuj@hJkYpSmGhMev@~GyLbA{YmCg@zF}FaCE{AiI`Gh@nD{FiDuAbGoBeJpA`EqPuBeVqGXiBtFeMa@_GtMmFkLtCsN_ZqFkMqUf@rSgShSmDj@mBsG}DdEwG_Hb@ySeC{LnFaQG{N}Ggw@tDgQsCiPvDgXmFcE}J_ZhAmJzG}FvNhI~HeD[}\\pDoNmBmc@kCbKcDXfD_@|B_KWpOiDlEhHmAFjMnGqRtJGpBtIbCaCwBrBoC{IgJT}Kj^Nd`@_C~E{TkI{HfMs@`GbK~WzEvCYhPcD|F`ChMwHcFqNlDqI_P"
+    },
+    "elapsed_time": 30779,
+    "moving_time": 23427,
+    "distance": 31919.8,
+    "total_elevation_gain": 1498.9,
+    "StartLatitude": 46.37,
+    "StartLongitude": 6.48
+  }
+]

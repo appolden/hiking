@@ -1,0 +1,72 @@
+﻿[
+  {
+    "id": 995732093,
+    "name": "HWP Day 5",
+    "start_date_local": "2017-05-19T09:05:57+00:00",
+    "map": {
+      "summary_polyline": "snbnIxt|PfPhAjJgJhElP`F`EhCeBp@bC|Nxx@G|]{Cly@kR`E_Ct\\}BC}Gji@mK|[ih@v]sGAeFvG_CuA_C`FqE|TxChk@yDzK_AtLqAnDm@s@wAlGwAxRjDhCkB`EeNrL{Aq@sNbHaLtN_KjAlDdPiBxBlBfMDfg@zC~m@lFjh@pD`BkE~d@p@xLs@pDzFfp@HnYzA~GaGzy@wEnyBaRlnFm@xn@kChQ_ADDfb@_A|@fAKQzKwGZsFx_@qFjSi[zLzHxb@wb@zdA{F{FkVna@mJzJiJ`BgDbG{GrdAsB|G_IpKgCrQgAtl@hAvDaAz@`@pBnAe@pAjJ"
+    },
+    "elapsed_time": 24311,
+    "moving_time": 17012,
+    "distance": 24249.9,
+    "total_elevation_gain": 63.8,
+    "StartLatitude": 54.9,
+    "StartLongitude": -2.94
+  },
+  {
+    "id": 994506106,
+    "name": "HWP Day 4",
+    "start_date_local": "2017-05-18T10:11:58+00:00",
+    "map": {
+      "summary_polyline": "gesnIp{tN`AqAZ|GiBbB`EzMpA`_@eFVeMfy@tAbXTuBVtCzDjCvBrOyDwDu@v@lCjt@zBpAKnHhI|l@dFyBnI``@dIxnAJ~FsBn@r@vJfGtTvDv@bAbFlBnPsCh@fa@bbCtKd}@o@hUsDjOvBtGDlMdAjBe@hQrAlh@dJbpBIbY}Cv@J`QfBd@`@xD\\z|@nF`UbA`Ss@bI{BtDMvLq@Tx@hQwBdXbBhEcHtE~GyEzBnDnJvf@_CnBThHoEdHvK|HbDnVa@xEjYbs@vObLpBxGjOlR~Rno@xD`Dz`@f{@bChgAf]zsCpUp`CrI_CrGaI~P{IfHVxBfGBvFdJqDfLlmAjFfLpDhC~Ffc@JtDeBb@K`JzDlUtFhIzL`@qDpSpOzPlAlH`HjOMpFpG~LzBvPlJpQfOxEfYtb@fBrGdA~QwC|UtEzSl^pJxA}JjBzAfAzPs@lE}IlJsO~CaBpGnBdNnKpMbD|GT|DbAm@_K|JqWM"
+    },
+    "elapsed_time": 29858,
+    "moving_time": 23779,
+    "distance": 33307.3,
+    "total_elevation_gain": 228.8,
+    "StartLatitude": 54.99,
+    "StartLongitude": -2.57
+  },
+  {
+    "id": 992646201,
+    "name": "HWP Day 3",
+    "start_date_local": "2017-05-17T10:31:45+00:00",
+    "map": {
+      "summary_polyline": "uyznIxs`LrCzz@iFv`@eJ_GeG|BjAx]dCdOqCdi@wDrT{FzF]hQhAbAErCe]hwBpEja@zFtpAtAtFpCze@`Fi@tBfIo@l@l@zC}HfUhCdj@UxRlDzShOlaCjB~t@nGro@rBd~@zCng@zEvPBpUhBdGnGp_A`EfObPdAzQ`LxJfp@|FfQvE`ErAlGrAgBSbCpAbDuCz@dBvUbE~LEzVv@zJjA_@{@jBpIxy@pD|KhLlGxFvHtEljAfDdSpBzAoAjHt@hABbPxAtCtDti@lCxCK`FaExE^fF_D`AfBvDhAYEb_AhD`l@zA`HlI~N|Dti@bGj^dGvTq@r`@t@fKxA~Cv@va@pFbZ^nPvC~HcA^h@xDaJ~[kCbT|AjVy@t\\lAfo@sAzC]hJv@tTyEn]j@bWlAnJvNpf@kAzDr@hF`BbAnDba@hKj[`EdCzBfFy@tHhB~H?`Rz@nDgA~cAzAnEwCdJsAwBe@nAlK|AbAtDM~I_GzLh@|b@oAxs@oE~r@{ChKrCrc@aG_@"
+    },
+    "elapsed_time": 29352,
+    "moving_time": 24222,
+    "distance": 33330.9,
+    "total_elevation_gain": 661.5,
+    "StartLatitude": 55.03,
+    "StartLongitude": -2.14
+  },
+  {
+    "id": 989966405,
+    "name": "HWP Day 2",
+    "start_date_local": "2017-05-16T10:25:58+00:00",
+    "map": {
+      "summary_polyline": "}qtnIdd}IPcLhAqC}BuB@sDRbDd@qCe@rBvAxDaChQkAIiI`hAkGn@gDjEtGn^uKvnAhBnDW~HWfByCSgFtr@T|GvMoAC`XyM_AGjYeB`Uq`@pjEnDflDoJlbDoKjb@pBzP|B|EkJb|Ez@j\\bEx`@nGlXaChRzAt|@g@vLdAhFqCjJoHhy@rBpIo@tMiYnkDyDtaAmClJ}D`k@mAf{BjBlx@_BnDXrTuH~d@cA~VuDdY`HxM^`\\vHnWaN\\qDeDeGePoGsEcCuF_HdBsN~OYvFlDrx@zBpF"
+    },
+    "elapsed_time": 25112,
+    "moving_time": 18904,
+    "distance": 27058,
+    "total_elevation_gain": 290.3,
+    "StartLatitude": 55,
+    "StartLongitude": -1.79
+  },
+  {
+    "id": 987561979,
+    "name": "HWP Day 1",
+    "start_date_local": "2017-05-15T10:29:58+00:00",
+    "map": {
+      "summary_polyline": "uusnIv_gHx@_A`B`DhI|YKz]dCbOfALfGpNqB~AfBw@lE~HyDcJdGtKbAgAQhClLbSdDdKfObGpUaD`P|D|QmAdWlFdTbXpEnAxAtCG{HjCdR~GvU|@fJ[rL{Q|f@aKvd@gBj\\xApJ_CvDg@pPoEbCaAbPkDvLeQf^s@vGhAlDIjh@xOl{@_C~GjH|BqC\\bAc@fL|ZhZf~@bEn_@h@do@uAxc@}E~j@wFfUyBdVeEhE{Cjk@u@GaBrPw@p[{Mx{AQlSoAKkEvKwMjEDbFqJdAaEbMgHpCX|HxL`F`AzOyChMyBfZmNpbA]bOcLtdAU|UwDrd@kJjk@?tFcCfDmCqCfHxH`JxeAuApG}If@c@tW{JzoAQbRtGb^cBjAAxQwElFQvIuA|CwInHj@xToBaD_DtDcIDkA_BIcNeGwd@qG_EiEvAcEcEeG~A"
+    },
+    "elapsed_time": 23683,
+    "moving_time": 18269,
+    "distance": 27711.4,
+    "total_elevation_gain": 228.1,
+    "StartLatitude": 54.99,
+    "StartLongitude": -1.52
+  }
+]
