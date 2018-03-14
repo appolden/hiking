@@ -6,7 +6,9 @@ class BivouacList extends Component {
 
   // Fetch after first mount
   componentDidMount() {
-    this.getBivvies();
+    fetch('/data/bivouacs.json')
+      .then(res => res.json())
+      .then(bivvies => this.setState({ bivvies }));
   }
 
   getBivvies = () => {

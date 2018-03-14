@@ -7,7 +7,11 @@ export class MapContainer extends Component {
 
     this.google = undefined;
     this.map = undefined;
-    this.state = { map: undefined, google: undefined };
+    this.state = {
+      map: undefined,
+      google: undefined,
+      activitiesHaveBeenLoaded: false
+    };
   }
 
   shouldComponentUpdate(nextProps, nextState) {
@@ -17,9 +21,15 @@ export class MapContainer extends Component {
     if (
       nextProps.activities.length > 0 &&
       nextProps.loaded &&
-      this.state.map !== undefined
+      this.state.map !== undefined &&
+      nextState.activitiesHaveBeenLoaded == false
     ) {
-      this.addActivitiesToMap(nextProps.activities);
+      this.addActivitiesToMap(
+        this.state.map,
+        this.state.google,
+        nextProps.activities
+      );
+      this.setState({ activitiesHaveBeenLoaded: true });
     }
 
     return this.state.map === undefined;
@@ -27,12 +37,8 @@ export class MapContainer extends Component {
 
   createRoute = (google, encodedPath, color) => {
     const defaultStrokeWeight = 4;
-    const selectedStrokeWeight = 10;
-
-    var decodedPath = this.state.google.maps.geometry.encoding.decodePath(
-      encodedPath
-    );
-    var route = new this.state.google.maps.Polyline({
+    const decodedPath = google.maps.geometry.encoding.decodePath(encodedPath);
+    const route = new google.maps.Polyline({
       path: decodedPath,
       strokeColor: color,
       strokeOpacity: 0.7,
@@ -42,28 +48,33 @@ export class MapContainer extends Component {
     return route;
   };
 
-  addActivitiesToMap = activities => {
+  addActivitiesToMap = (map, google, activities) => {
     if (activities.length === 0) {
       return;
     }
 
-    this.state.map.setCenter(this.props.initialCenter);
-    this.state.map.setZoom(this.props.initialZoom);
+    map.setCenter(this.props.initialCenter);
+    map.setZoom(this.props.initialZoom);
 
     const routes = activities.map(activity =>
-      this.createRoute(this.google, activity.map.summary_polyline, '#FF0000')
+      this.createRoute(google, activity.map.summary_polyline, '#FF0000')
     );
 
-    routes.map(route => route.setMap(this.state.map));
+    routes.map(route => route.setMap(map));
   };
 
   onMapReady = (mapProps, map) => {
-    this.map = map;
-    this.google = mapProps.google;
-    this.setState({ google: mapProps.google, map: map });
+    let activitiesHaveBeenLoaded = false;
     if (this.props.activities.length > 0) {
-      this.addActivitiesToMap(this.props.activities);
+      this.addActivitiesToMap(map, mapProps.google, this.props.activities);
+      activitiesHaveBeenLoaded = true;
     }
+
+    this.setState({
+      google: mapProps.google,
+      map: map,
+      activitiesHaveBeenLoaded: activitiesHaveBeenLoaded
+    });
   };
 
   render() {

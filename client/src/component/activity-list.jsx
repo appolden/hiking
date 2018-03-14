@@ -1,4 +1,5 @@
 ﻿import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 Number.prototype.toHHMM = function() {
   var sec_num = parseInt(this, 10); // don't forget the second param
@@ -39,7 +40,45 @@ function FormattedTime(props) {
   }).format(parsedDate);
 }
 
+function ConvertDistance(props) {
+  switch (props.unit) {
+    case 'metric':
+      return (props.metres * 0.001).toFixed(2);
+  }
+}
+class Distance extends Component {
+  constructor(props) {
+    super(props);
+    // props.unit = "metric"; props.unit || "metric" ;
+    //<ConvertDistance unit="metric" metres={activity.distance} />  kms
+  }
+
+  render() {
+    let distance = '';
+
+    switch (this.props.unit) {
+      case 'metric':
+        distance = (this.props.metres * 0.001).toFixed(2) + ' kms';
+        break;
+      case 'imperial':
+        distance = (this.props.metres * 0.000621371).toFixed(2) + ' miles';
+        break;
+
+      default:
+      case 'metres':
+        distance = this.props.metres + ' metres';
+        break;
+    }
+
+    return <React.Fragment>{distance}</React.Fragment>;
+  }
+}
+
 class ActivityList extends Component {
+  constructor(props) {
+    super(props);
+  }
+
   render() {
     const activityRow = this.props.activities.map(activity => (
       <div key={activity.id}>
@@ -59,8 +98,8 @@ class ActivityList extends Component {
           </li>
           <li>
             <span>
-              {activity.distance.toFixed(2)} kms Ascent{' '}
-              {activity.total_elevation_gain.toFixed(0)} metres
+              <Distance unit={this.props.unit} metres={activity.distance} />{' '}
+              Ascent {activity.total_elevation_gain.toFixed(0)} metres
             </span>
           </li>
           <li>
@@ -75,24 +114,23 @@ class ActivityList extends Component {
       </div>
     ));
 
-          //    <div>
-          //  <label>
-          //    <input type="radio" value="metric" />
-          //    Metric
-          //  </label>
-          //  <label>
-          //    <input type="radio" value="imperial" />
-          //    Imperial
-          //  </label>
-          //</div>
-
-    return (
-      <div className="col-md-4 activityList">
-
-        <div id="activityList">{activityRow}</div>
-      </div>
-    );
+    return <div id="activityList">{activityRow}</div>;
   }
 }
+
+ActivityList.propTypes = {
+  unit: 'metric',
+  activities: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number,
+      name: PropTypes.string,
+      start_date_local: PropTypes.string,
+      elapsed_time: PropTypes.number,
+      moving_time: PropTypes.number,
+      distance: PropTypes.number,
+      total_elevation_gain: PropTypes.number
+    })
+  )
+};
 
 export default ActivityList;

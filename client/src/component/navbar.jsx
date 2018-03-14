@@ -80,6 +80,7 @@ class NavBar extends Component {
                   href="https://photos.google.com/share/AF1QipN1jVFAS5JEpF0e36z0Gv6zs7dykIKVjMIgqmw6Xe6AIXzQiD-AMQFy_G3f8_U_Hw?key=N1ktajR1b21LaVVRODJqdV9USVVLMUpacUtmelVB"
                   target="_blank"
                   title="Photos - Pacfic Crest Trail"
+                  rel="noopener noreferrer"
                 >
                   Pacific Crest Trail
                 </a>
@@ -88,6 +89,7 @@ class NavBar extends Component {
                   href="https://goo.gl/photos/UiJQ6kRm8FWZbjsD7"
                   target="_blank"
                   title="Photos - Peak District"
+                  rel="noopener noreferrer"
                 >
                   Peak District
                 </a>
@@ -96,6 +98,7 @@ class NavBar extends Component {
                   href="https://photos.google.com/share/AF1QipN-blVlvfdLclA6GDXtXegZBYLF8SldhzwX6OL1PJodJTroJ5Tpeaw-ga7Smj_pAw/story/AF1QipNvcwuF6Ut-hGX9TqCaPOzNYXpPpdtBb_ONcaiPL6aYRDtCcAgS_TkHDQKK-YvjkQ?key=a1JCdFB0TnNoUWpIdkFkRzQzajN3NEd4RkpmczRB"
                   target="_blank"
                   title="Photos - Morocco"
+                  rel="noopener noreferrer"
                 >
                   Morocco
                 </a>
