@@ -58,7 +58,7 @@ class App extends Component {
       <Router>
         <React.Fragment>
           <NavBar />
-          <div className="container">
+          <div className="container-fluid">
             <Route exact path="/" component={TrailsSummary} />
             <Route exact path="/trail/hadrianswallpath" component={HwpTrail} />
             <Route exact path="/trail/pacificcresttrail" component={PctTrail} />

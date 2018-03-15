@@ -7,7 +7,6 @@ class TrailView extends Component {
   constructor(props) {
     super(props);
     this.unitChange = this.unitChange.bind(this);
-
     this.state = { activities: [], unit: 'metric' };
   }
 
@@ -24,7 +23,7 @@ class TrailView extends Component {
   render() {
     return (
       <div className="row">
-        <div className="col-md-8">
+        <div className="col-sm-8">
           <MapContainer
             activities={this.state.activities}
             initialCenter={this.props.initialCenter}
@@ -32,7 +31,7 @@ class TrailView extends Component {
           />
         </div>
 
-        <div className="col-md-4 activityList">
+        <div className="col-sm-4 activityList">
           <UnitOfMeasurementSelector
             unit="metric"
             onUnitChange={this.unitChange}

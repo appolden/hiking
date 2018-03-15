@@ -6,7 +6,7 @@ class NavBar extends Component {
     return (
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <a className="navbar-brand" href="/">
-          Hiking trails
+          Hiking
         </a>
         <button
           className="navbar-toggler"
@@ -48,10 +48,10 @@ class NavBar extends Component {
                 className="dropdown-menu"
                 aria-labelledby="navbarDropdownMenuLink"
               >
-                <Link to="/trail/hwp" className="dropdown-item">
+                <Link to="/trail/hadrianswallpath" className="dropdown-item">
                   Hadrian's Wall Path
                 </Link>
-                <Link to="/trail/pct" className="dropdown-item">
+                <Link to="/trail/pacificcresttrail" className="dropdown-item">
                   Pacific Crest Trail
                 </Link>
                 <Link to="/trail/gr5" className="dropdown-item">

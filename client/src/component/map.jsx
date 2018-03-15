@@ -8,27 +8,38 @@ export class MapContainer extends Component {
     this.google = undefined;
     this.map = undefined;
     this.state = {
-      map: undefined,
-      google: undefined,
       activitiesHaveBeenLoaded: false
     };
+  }
+
+  componentDidMount() {
+    console.log('componentDidMount');
+  }
+
+  componentWillUnmount() {
+    this.map = null;
+    this.google = null;
+
+    console.log('componentWillUnmount');
   }
 
   shouldComponentUpdate(nextProps, nextState) {
     // If shouldComponentUpdate returns false,
     // then render() will be completely skipped until the next state change.
     // In addition, componentWillUpdate and componentDidUpdate will not be called.
+
+    console.log(
+      `shouldComponentUpdate - length ${nextProps.activities.length} ${
+        nextProps.loaded
+      } ${this.map !== undefined} ${nextState.activitiesHaveBeenLoaded}`
+    );
     if (
       nextProps.activities.length > 0 &&
       nextProps.loaded &&
-      this.state.map !== undefined &&
-      nextState.activitiesHaveBeenLoaded == false
+      this.map !== undefined &&
+      nextState.activitiesHaveBeenLoaded === false
     ) {
-      this.addActivitiesToMap(
-        this.state.map,
-        this.state.google,
-        nextProps.activities
-      );
+      this.addActivitiesToMap(this.map, this.google, nextProps.activities);
       this.setState({ activitiesHaveBeenLoaded: true });
     }
 
@@ -65,16 +76,15 @@ export class MapContainer extends Component {
 
   onMapReady = (mapProps, map) => {
     let activitiesHaveBeenLoaded = false;
+    this.map = map;
+    this.google = mapProps.google;
     if (this.props.activities.length > 0) {
       this.addActivitiesToMap(map, mapProps.google, this.props.activities);
       activitiesHaveBeenLoaded = true;
+      this.setState({
+        activitiesHaveBeenLoaded: activitiesHaveBeenLoaded
+      });
     }
-
-    this.setState({
-      google: mapProps.google,
-      map: map,
-      activitiesHaveBeenLoaded: activitiesHaveBeenLoaded
-    });
   };
 
   render() {

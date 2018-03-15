@@ -4,9 +4,11 @@ class UnitOfMeasurementSelector extends Component {
   constructor(props) {
     super(props);
     this.handleChange = this.handleChange.bind(this);
+    this.state = { selectedOption: this.props.unit };
   }
 
   handleChange(e) {
+    this.setState({ selectedOption: e.target.value });
     this.props.onUnitChange(e.target.value);
   }
 
@@ -19,6 +21,7 @@ class UnitOfMeasurementSelector extends Component {
             name="unit"
             value="metric"
             onChange={this.handleChange}
+            checked={this.state.selectedOption === 'metric'}
           />
           Metric
         </label>
@@ -28,6 +31,7 @@ class UnitOfMeasurementSelector extends Component {
             name="unit"
             value="imperial"
             onChange={this.handleChange}
+            checked={this.state.selectedOption === 'imperial'}
           />
           Imperial
         </label>

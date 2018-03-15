@@ -40,17 +40,9 @@ function FormattedTime(props) {
   }).format(parsedDate);
 }
 
-function ConvertDistance(props) {
-  switch (props.unit) {
-    case 'metric':
-      return (props.metres * 0.001).toFixed(2);
-  }
-}
 class Distance extends Component {
   constructor(props) {
     super(props);
-    // props.unit = "metric"; props.unit || "metric" ;
-    //<ConvertDistance unit="metric" metres={activity.distance} />  kms
   }
 
   render() {
@@ -119,7 +111,6 @@ class ActivityList extends Component {
 }
 
 ActivityList.propTypes = {
-  unit: 'metric',
   activities: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.number,

@@ -37,7 +37,7 @@
   }
 
   .activityList {
-    max-height: 400px;
+    max-height: 500px;
     overflow-y: scroll;
   }
 }
@@ -55,4 +55,8 @@
 
 p {
   white-space: pre-wrap;
+}
+
+.navbar {
+  margin-bottom: 10px;
 }
