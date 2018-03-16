@@ -1,25 +1,25 @@
 ﻿const express = require('express');
 const path = require('path');
 const serveStatic = require('serve-static');
-
 const https = require('https');
+
+const staticPath = path.join(__dirname, 'client/build');
 
 const app = express();
 
+app.disable('x-powered-by');
+
 // Serve static files from the React app
-app.use(express.static(path.join(__dirname, 'client/build'), {
+app.use(express.static(staticPath, {
     setHeaders: setCustomCacheControl
 }));
 
 // Put all API endpoints under '/api'
 app.get('/api/passwords', (req, res) => {
-    const count = 5;
-
     const greeting = { message: 'hello world!', secret: process.env.SECRET_CODE};
 
     //// Return them as json
     res.json(greeting);
-
 });
 
 app.get('/api/strava', (req, res) => {
@@ -64,6 +64,7 @@ app.listen(port);
 
 
 console.log(`listening on ${port}`);
+console.log(`static path on ${staticPath}`);
 
 function setCustomCacheControl(res, path, stat) {
     if (serveStatic.mime.lookup(path) === 'application/javascript') {

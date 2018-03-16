@@ -7,6 +7,8 @@ import BivouacList from './component/bivouac-list.jsx';
 import TrailsSummary from './component/trails-summary.jsx';
 import TrailView from './component/trail-view.jsx';
 
+import Gr10Map from './component/gr10-map.jsx';
+
 class PctTrail extends Component {
   render() {
     const pctCenter = { lat: 40.709819, lng: -119.696672 };
@@ -64,6 +66,36 @@ class App extends Component {
             <Route exact path="/trail/pacificcresttrail" component={PctTrail} />
             <Route exact path="/trail/gr5" component={Gr5Trail} />
             <Route path="/bivvy" component={BivouacList} />
+            <Route path="/gr10" component={Gr10Map} />
+            <div className="row">
+              <div className="col-12">
+                Icons made by{' '}
+                <a
+                  href="http://www.freepik.com"
+                  title="Freepik"
+                  rel="noopener noreferrer"
+                >
+                  Freepik
+                </a>{' '}
+                from{' '}
+                <a
+                  href="https://www.flaticon.com/"
+                  title="Flaticon"
+                  rel="noopener noreferrer"
+                >
+                  www.flaticon.com
+                </a>{' '}
+                is licensed by{' '}
+                <a
+                  href="http://creativecommons.org/licenses/by/3.0/"
+                  title="Creative Commons BY 3.0"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  CC 3.0 BY
+                </a>
+              </div>
+            </div>
           </div>
         </React.Fragment>
       </Router>

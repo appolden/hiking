@@ -41,10 +41,6 @@ function FormattedTime(props) {
 }
 
 class Distance extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     let distance = '';
 
@@ -67,10 +63,6 @@ class Distance extends Component {
 }
 
 class ActivityList extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     const activityRow = this.props.activities.map(activity => (
       <div key={activity.id}>

@@ -12,15 +12,9 @@ export class MapContainer extends Component {
     };
   }
 
-  componentDidMount() {
-    console.log('componentDidMount');
-  }
-
   componentWillUnmount() {
     this.map = null;
     this.google = null;
-
-    console.log('componentWillUnmount');
   }
 
   shouldComponentUpdate(nextProps, nextState) {
@@ -28,11 +22,6 @@ export class MapContainer extends Component {
     // then render() will be completely skipped until the next state change.
     // In addition, componentWillUpdate and componentDidUpdate will not be called.
 
-    console.log(
-      `shouldComponentUpdate - length ${nextProps.activities.length} ${
-        nextProps.loaded
-      } ${this.map !== undefined} ${nextState.activitiesHaveBeenLoaded}`
-    );
     if (
       nextProps.activities.length > 0 &&
       nextProps.loaded &&
