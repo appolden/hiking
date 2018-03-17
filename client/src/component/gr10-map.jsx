@@ -7,10 +7,40 @@ export class Gr10Map extends Component {
 
     this.google = undefined;
     this.map = undefined;
-    this.state = {
-      activitiesHaveBeenLoaded: false
-    };
+
+    this.campingLocations = [
+      {
+        locatedAtTrailMetre: 9700,
+        title: 'bivouac du col des Poiriers (Pitare, Osingo Lépoa)'
+      },
+      {
+        locatedAtTrailMetre: 24500,
+        title: ' bivouac des Trois Fontaines (sous la Rhune) '
+      },
+
+      {
+        locatedAtTrailMetre: 32600,
+        title: 'bivouac au camping La petite Rhune',
+          point: {lat: 43.302383, lng: -1.587439}
+      },
+
+      {
+        locatedAtTrailMetre: 39500,
+        title: 'bivouac du pont du diable'
+      },
+
+      {
+        locatedAtTrailMetre: 42300,
+        title: 'bivouac au Camping Harazpy',
+        point: {lat: 43.310206, lng: -1.501994}
+      },
+      {
+        locatedAtTrailMetre: 48300,
+        title: 'bivouac de Gainekoborda'
+      }
+    ];
   }
+
 
   componentWillUnmount() {
     this.map = null;
@@ -22,21 +52,10 @@ export class Gr10Map extends Component {
     // then render() will be completely skipped until the next state change.
     // In addition, componentWillUpdate and componentDidUpdate will not be called.
 
-    return this.state.map === undefined;
+    return this.map === undefined;
   }
 
   createRoute = (map, google, points) => {
-    //const defaultStrokeWeight = 4;
-
-    //const route = new google.maps.Polyline({
-    //    path: pathCoordinates,
-    //  strokeColor: color,
-    //  strokeOpacity: 0.7,
-    //  strokeweight: defaultStrokeWeight
-    //});
-
-    //return route;
-
     const route = new google.maps.Polyline({
       path: points,
       strokeColor: '#FF0000',
@@ -47,44 +66,50 @@ export class Gr10Map extends Component {
     return route;
   };
 
-  calculateDistance = (map, google, route) => {
+  addCampingLocationsToMap = (map, google, route) => {
     let path = route.getPath();
     let distance = 0;
+
+    this.campingLocations.filter(camp => camp.point !== undefined)
+      .forEach(camp => {
+          new google.maps.Marker({
+              position: camp.point,
+              title: camp.title,
+              map: map,
+              icon: '/tent.png'
+          });
+      });
 
     path.forEach((point, index) => {
       if (index === path.length - 1) {
         //the last point
-        console.log(distance);
+        //console.log(distance);
         return distance;
       }
 
       const nextPoint = path.getAt(index + 1);
-      distance += google.maps.geometry.spherical.computeDistanceBetween(
-        point,
-        nextPoint
-      );
+      const distanceToNextPoint =
+        distance +
+        google.maps.geometry.spherical.computeDistanceBetween(point, nextPoint);
 
-      if (distance > 48300 && distance < 48400) {
-        // console.log(`creating marker at ${point}`);
+      const found = this.campingLocations.find(function(element) {
+        return (
+          element.locatedAtTrailMetre >= distance &&
+          element.locatedAtTrailMetre < distanceToNextPoint && element.point === undefined
+        );
+      });
+
+      if (found !== undefined) {
         new google.maps.Marker({
           position: point,
-          title: 'bivouac de Gainekoborda',
+          title: found.title + ' between ' + (distance * 0.001).toFixed(2) + ' and ' + (distanceToNextPoint * 0.001).toFixed(2),
           map: map,
           icon: '/tent.png'
         });
-        return;
       }
 
-      if (distance > 70800 && distance < 70900) {
-        //  console.log(`creating marker at ${point}`);
-        new google.maps.Marker({
-          position: point,
-          title: "bivouac du col d'harrieta (crêtes d'Iparla)",
-          map: map,
-          icon: '/tent.png'
-        });
-        return;
-      }
+      distance = distanceToNextPoint;
+
     });
   };
 
@@ -92,20 +117,21 @@ export class Gr10Map extends Component {
     this.map = map;
     this.google = mapProps.google;
 
-    fetch('/data/gr10/gpx/gr10-1-Hendaye.gpx')
-      .then(response => response.text())
-      .then(str => new window.DOMParser().parseFromString(str, 'text/xml'))
+    fetch('/data/gr10/gr10-route.json')
+      .then(response => response.json())
       .then(data => {
-        const trkpts = Array.from(data.getElementsByTagName('trkpt'));
-        const points = trkpts.map(trkpt => {
-          const lat = parseFloat(trkpt.getAttribute('lat'));
-          const lon = parseFloat(trkpt.getAttribute('lon'));
-          return { lat: lat, lng: lon };
+        const decodedPath = mapProps.google.maps.geometry.encoding.decodePath(
+          data.polyline
+        );
+        const route = new mapProps.google.maps.Polyline({
+          path: decodedPath,
+          strokeColor: '#FF0000',
+          strokeOpacity: 1.0,
+          strokeWeight: 4
         });
-
-        const route = this.createRoute(map, mapProps.google, points);
+        //console.log(encodedPath);
         route.setMap(map);
-        this.calculateDistance(map, mapProps.google, route);
+        this.addCampingLocationsToMap(map, mapProps.google, route);
       });
   };
 
@@ -116,9 +142,9 @@ export class Gr10Map extends Component {
           <div className="gr10map">
             <Map
               google={this.props.google}
-              zoom={10}
+              zoom={8}
               onReady={this.onMapReady}
-              initialCenter={{ lat: 43.373138, lng: -1.77406 }}
+              initialCenter={{ lat: 42.742489, lng: 0.278810 }}
             />
           </div>
         </div>
@@ -126,6 +152,7 @@ export class Gr10Map extends Component {
     );
   }
 }
+
 
 export default GoogleApiWrapper({
   apiKey: 'AIzaSyCbTwcCRBzA9Qc5dT_aPYebyiprFlV1WVE',

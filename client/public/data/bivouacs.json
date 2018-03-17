@@ -32,8 +32,8 @@
   {
     "position": " 24.5km, 530m ",
     "location": " bivouac des Trois Fontaines (sous la Rhune) ",
-    "descriptionFR": "Eau de source, un lieu de bivouac aéré sans trop être exposé, zone forestière, humide, très belle vue sur la côte basque, calme assuré en fin de journée après le départ des randonneurs de la Rhune \nEau : en faible quantité, Feu : possible, Risque météo : moyen car zone faiblement exposée (orage et/ou froid en altitude). solution de replis : une petite cabane dans le secteur de 3 places. ",
-    "descriptionEN": "Spring water, a bivouac place ventilated without much exposure, forest area, wet, very beautiful view of the Basque coast, quiet at the end of the day after the departure of hikers of the Rhune Water: in small quantity, Fire: possible, Weather risk: medium because zone weakly exposed (storm and / or cold in altitude). fallback solution: a small cabin in the area of 3 places."
+    "descriptionFR": "Eau de source, un lieu de bivouac aéré sans trop être exposé, zone forestière, humide, très belle vue sur la côte basque, calme assuré en fin de journée après le départ des randonneurs de la Rhune \nEau : en faible quantité. solution de replis: une petite cabane dans le secteur de 3 places. ",
+    "descriptionEN": "Spring water, a bivouac place ventilated without much exposure, forest area, wet, very beautiful view of the Basque coast, quiet at the end of the day after the departure of hikers of the Rhune Water: in small quantity. Fallback solution: a small cabin in the area of 3 places."
   },
   {
     "position": "29.6km, 70m",

@@ -8,6 +8,7 @@ import TrailsSummary from './component/trails-summary.jsx';
 import TrailView from './component/trail-view.jsx';
 
 import Gr10Map from './component/gr10-map.jsx';
+import EncodeGpx from './component/encode-gpx.jsx';
 
 class PctTrail extends Component {
   render() {
@@ -67,6 +68,7 @@ class App extends Component {
             <Route exact path="/trail/gr5" component={Gr5Trail} />
             <Route path="/bivvy" component={BivouacList} />
             <Route path="/gr10" component={Gr10Map} />
+            <Route path="/tools/encodegpx" component={EncodeGpx} />
             <div className="row">
               <div className="col-12">
                 Icons made by{' '}
