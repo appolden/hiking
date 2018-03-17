@@ -1,5 +1,5 @@
 ﻿import React, { Component } from 'react';
-import { Map, GoogleApiWrapper } from 'google-maps-react';
+import { Map, InfoWindow, Marker, GoogleApiWrapper } from 'google-maps-react';
 
 export class Gr10Map extends Component {
   constructor(props) {
@@ -7,83 +7,30 @@ export class Gr10Map extends Component {
 
     this.google = undefined;
     this.map = undefined;
+    this.route = undefined;
+    this.trailNotes = [];
+    this.state = {
+      showingInfoWindow: false,
+      infoWindowContent: 'hello',
+      trailNotes: []
+    };
 
-    this.campingLocations = [
-      {
-        locatedAtTrailMetre: 9700,
-        title: 'bivouac du col des Poiriers (Pitare, Osingo Lépoa)'
-      },
-      {
-        locatedAtTrailMetre: 24500,
-        title: ' bivouac des Trois Fontaines (sous la Rhune) '
-      },
-
-      {
-        locatedAtTrailMetre: 32600,
-        title: 'bivouac au camping La petite Rhune',
-          point: {lat: 43.302383, lng: -1.587439}
-      },
-
-      {
-        locatedAtTrailMetre: 39500,
-        title: 'bivouac du pont du diable'
-      },
-
-      {
-        locatedAtTrailMetre: 42300,
-        title: 'bivouac au Camping Harazpy',
-        point: {lat: 43.310206, lng: -1.501994}
-      },
-      {
-        locatedAtTrailMetre: 48300,
-        title: 'bivouac de Gainekoborda'
-      }
-    ];
+    this.onMarkerClick = this.onMarkerClick.bind(this);
   }
 
 
-  componentWillUnmount() {
-    this.map = null;
-    this.google = null;
-  }
-
-  shouldComponentUpdate(nextProps, nextState) {
-    // If shouldComponentUpdate returns false,
-    // then render() will be completely skipped until the next state change.
-    // In addition, componentWillUpdate and componentDidUpdate will not be called.
-
-    return this.map === undefined;
-  }
-
-  createRoute = (map, google, points) => {
-    const route = new google.maps.Polyline({
-      path: points,
-      strokeColor: '#FF0000',
-      strokeOpacity: 1.0,
-      strokeWeight: 4
-    });
-
-    return route;
-  };
 
   addCampingLocationsToMap = (map, google, route) => {
     let path = route.getPath();
     let distance = 0;
-
-    this.campingLocations.filter(camp => camp.point !== undefined)
-      .forEach(camp => {
-          new google.maps.Marker({
-              position: camp.point,
-              title: camp.title,
-              map: map,
-              icon: '/tent.png'
-          });
-      });
+    const trailNotes = [];
+    this.trailNotes.filter(camp => camp.point !== undefined).forEach(camp => {
+      trailNotes.push(camp);
+    });
 
     path.forEach((point, index) => {
       if (index === path.length - 1) {
         //the last point
-        //console.log(distance);
         return distance;
       }
 
@@ -92,30 +39,30 @@ export class Gr10Map extends Component {
         distance +
         google.maps.geometry.spherical.computeDistanceBetween(point, nextPoint);
 
-      const found = this.campingLocations.find(function(element) {
+      const locatedTrailNote = this.trailNotes.find(function(element) {
         return (
           element.locatedAtTrailMetre >= distance &&
-          element.locatedAtTrailMetre < distanceToNextPoint && element.point === undefined
+          element.locatedAtTrailMetre < distanceToNextPoint &&
+          element.point === undefined &&
+          (element.camping || element.gite)
         );
       });
 
-      if (found !== undefined) {
-        new google.maps.Marker({
-          position: point,
-          title: found.title + ' between ' + (distance * 0.001).toFixed(2) + ' and ' + (distanceToNextPoint * 0.001).toFixed(2),
-          map: map,
-          icon: '/tent.png'
-        });
+      if (locatedTrailNote !== undefined) {
+        locatedTrailNote.point = point;
+        trailNotes.push(locatedTrailNote);
       }
 
       distance = distanceToNextPoint;
-
     });
+
+    this.setState({ trailNotes: trailNotes });
   };
 
   onMapReady = (mapProps, map) => {
     this.map = map;
     this.google = mapProps.google;
+
 
     fetch('/data/gr10/gr10-route.json')
       .then(response => response.json())
@@ -123,19 +70,65 @@ export class Gr10Map extends Component {
         const decodedPath = mapProps.google.maps.geometry.encoding.decodePath(
           data.polyline
         );
-        const route = new mapProps.google.maps.Polyline({
+        this.route = new mapProps.google.maps.Polyline({
           path: decodedPath,
           strokeColor: '#FF0000',
           strokeOpacity: 1.0,
           strokeWeight: 4
         });
-        //console.log(encodedPath);
-        route.setMap(map);
-        this.addCampingLocationsToMap(map, mapProps.google, route);
+
+        this.route.setMap(map);
+
+        if (this.trailNotes !== undefined) {
+          this.addCampingLocationsToMap(
+            map,
+            mapProps.google,
+            this.route,
+            this.trailNotes
+          );
+        }
+      });
+
+    fetch('/data/bivouacs.json')
+      .then(res => res.json())
+      .then(trailNotes => {
+        this.trailNotes = trailNotes;
+
+        if (this.map !== undefined) {
+          this.addCampingLocationsToMap(
+            this.map,
+            this.google,
+            this.route,
+            this.trailNotes
+          );
+        }
       });
   };
 
+  onMarkerClick(props, marker, e) {
+    this.setState({
+      activeMarker: marker,
+      showingInfoWindow: true,
+      activeTrailNote: props.name
+    });
+  }
+
   render() {
+    const markers = this.state.trailNotes.map(trailNote => {
+      return (
+        <Marker
+          key={trailNote.position}
+          title={trailNote.location}
+          name={trailNote}
+          position={trailNote.point}
+          icon={{
+            url: trailNote.camping ? '/tent.png' : '/kennel.svg'
+          }}
+          onClick={this.onMarkerClick}
+        />
+      );
+    });
+
     return (
       <div className="row">
         <div className="col-12">
@@ -144,15 +137,31 @@ export class Gr10Map extends Component {
               google={this.props.google}
               zoom={8}
               onReady={this.onMapReady}
-              initialCenter={{ lat: 42.742489, lng: 0.278810 }}
-            />
+              initialCenter={{ lat: 42.742489, lng: 0.27881 }}
+            >
+              {markers}
+              {this.state.activeTrailNote && (
+                <InfoWindow
+                  marker={this.state.activeMarker}
+                  visible={this.state.showingInfoWindow}
+                >
+                  <div>
+                    <h6>{this.state.activeTrailNote.location}</h6>
+                    <div>
+                      {this.state.activeTrailNote.descriptionEN !== ''
+                        ? this.state.activeTrailNote.descriptionEN
+                        : this.state.activeTrailNote.descriptionFR}
+                    </div>
+                  </div>
+                </InfoWindow>
+              )}
+            </Map>
           </div>
         </div>
       </div>
     );
   }
 }
-
 
 export default GoogleApiWrapper({
   apiKey: 'AIzaSyCbTwcCRBzA9Qc5dT_aPYebyiprFlV1WVE',

@@ -17,22 +17,41 @@ class BivouacList extends Component {
     const bivvies = this.state.bivvies;
 
     const rowss = bivvies.map((bivvyLocation, index) => (
-      <div className="row" key={index}>
-        <div>
-          <div className="col-12">
-            <strong>
-              {bivvyLocation.position} {bivvyLocation.location}
-            </strong>
-          </div>
-          <div className="col-12">
-            <p>{bivvyLocation.descriptionFR}</p>
-            <p>{bivvyLocation.descriptionEN}</p>
-          </div>
+      <div className="row" key={bivvyLocation.position}>
+        <div className="col-12">
+          <h2>
+            {bivvyLocation.position} {bivvyLocation.location}
+          </h2>
+        </div>
+        <div className="col-12">
+          <p>{bivvyLocation.descriptionFR}</p>
+          <p>{bivvyLocation.descriptionEN}</p>
         </div>
       </div>
     ));
 
-    return <React.Fragment>{rowss}</React.Fragment>;
+    return (
+      <React.Fragment>
+        <div className="row">
+          <div className="col-12">
+            <h1>GR10 Trail Notes</h1>
+            <p>
+              Thanks to{' '}
+              <a href="http://www.gr10.fr/" title="GR10">
+                www.gr10.fr
+              </a>{' '}
+              for the information. This page presents the same information in a
+              more user friendly layout. It can easily be printed to PDF and
+              accessed offline for those times when there is no cellphone
+              coverage and you need to find the next camping spot. Also, a
+              portion of the original French has been translated to English.
+            </p>
+          </div>
+        </div>
+
+        {rowss}
+      </React.Fragment>
+    );
   }
 }
 
