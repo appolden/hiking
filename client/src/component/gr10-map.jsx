@@ -1,5 +1,6 @@
 ﻿import React, { Component } from 'react';
 import { Map, InfoWindow, Marker, GoogleApiWrapper } from 'google-maps-react';
+import MapHelper from '../maps/mapHelper.jsx';
 
 export class Gr10Map extends Component {
   constructor(props) {
@@ -12,91 +13,138 @@ export class Gr10Map extends Component {
     this.state = {
       showingInfoWindow: false,
       infoWindowContent: 'hello',
-      trailNotes: []
+      trailNotes: [],
+      editMode: props.match.params.mode === 'edit'
     };
 
     this.onMarkerClick = this.onMarkerClick.bind(this);
     this.onDragEnd = this.onDragEnd.bind(this);
   }
 
-  addCampingLocationsToMap = (map, google, route) => {
-    let path = route.getPath();
-    let distance = 0;
-    const trailNotes = [];
-    this.trailNotes.filter(camp => camp.point !== undefined).forEach(camp => {
-      trailNotes.push(camp);
+  handleMarkClick(a, marker, infoWindow) {
+    return e => {
+      const header = marker.getTitle();
+      const description = marker.description;
+      //  <div>
+      //    {this.state.activeTrailNote.descriptionEN !== ''
+      //      ? this.state.activeTrailNote.descriptionEN
+      //      : this.state.activeTrailNote.descriptionFR}
+      //  </div>
+      //</div>
+
+      infoWindow.open(marker.getMap(), marker);
+      infoWindow.setContent(
+        `<h6>${header}</h6><div><p>${marker.description}</p></div>`
+      );
+    };
+  }
+  handleMarkerDragend(marker) {
+    return e => {
+      const updatedTrailNote = {
+        position: marker.getTitle(),
+        point: {
+          lat: marker.getPosition().lat(),
+          lng: marker.getPosition().lng()
+        }
+      };
+
+      console.log(JSON.stringify(updatedTrailNote));
+    };
+  }
+
+  addCampingLocationsToMap = (map, google, route, trailNotes) => {
+    const iw = (this.infowindow = new google.maps.InfoWindow({
+      content: ''
+    }));
+
+    const trailNotesToAddToMap = [];
+
+    trailNotes.filter(camp => camp.point !== undefined).forEach(camp => {
+      trailNotesToAddToMap.push(camp);
     });
 
-    path.forEach((point, index) => {
-      if (index === path.length - 1) {
-        //the last point
-        return distance;
+    if (this.props.match.params.mode === 'edit') {
+      console.log('add points to edit');
+      let path = route.getPath();
+      let distance = 0;
+
+      path.forEach((point, index) => {
+        if (index === path.length - 1) {
+          //the last point
+          return distance;
+        }
+
+        const nextPoint = path.getAt(index + 1);
+        const distanceToNextPoint =
+          distance +
+          google.maps.geometry.spherical.computeDistanceBetween(
+            point,
+            nextPoint
+          );
+
+        const locatedTrailNote = this.trailNotes.find(function(element) {
+          const offset = 1.012845867; // to correct the actual GPX distance compared to the official distance.
+          return (
+            element.locatedAtTrailMetre * offset >= distance &&
+            element.locatedAtTrailMetre * offset < distanceToNextPoint &&
+            element.point === undefined &&
+            (element.camping || element.gite)
+          );
+        });
+
+        if (locatedTrailNote !== undefined) {
+          locatedTrailNote.point = { lat: point.lat(), lng: point.lng() };
+          locatedTrailNote.locatedByTrailMile = true;
+          trailNotesToAddToMap.push(locatedTrailNote);
+        }
+
+        distance = distanceToNextPoint;
+      });
+    }
+
+    trailNotesToAddToMap.forEach(trailNote => {
+      let iconUrl = '/tent.png';
+
+      if (trailNote.camping && trailNote.locatedByTrailMile) {
+        iconUrl = '/red-tent.svg';
       }
 
-      const nextPoint = path.getAt(index + 1);
-      const distanceToNextPoint =
-        distance +
-        google.maps.geometry.spherical.computeDistanceBetween(point, nextPoint);
+      if (trailNote.gite) {
+        iconUrl = '/kennel.svg';
+      }
 
-      const locatedTrailNote = this.trailNotes.find(function(element) {
-        const offset = 1.012845867; // to correct the actual GPX distance compared to the official distance.
-        return (
-          element.locatedAtTrailMetre * offset >= distance &&
-          element.locatedAtTrailMetre * offset < distanceToNextPoint &&
-          element.point === undefined &&
-          (element.camping || element.gite)
-        );
+      const marker = new google.maps.Marker({
+        map: map,
+        position: { lat: trailNote.point.lat, lng: trailNote.point.lng },
+        title: trailNote.location,
+        icon: iconUrl,
+        draggable: this.props.match.params.mode === 'edit'
       });
 
-      if (locatedTrailNote !== undefined) {
-        locatedTrailNote.point = point;
-        locatedTrailNote.locatedByTrailMile = true;
-        trailNotes.push(locatedTrailNote);
+      marker.description = trailNote.descriptionFR;
+
+      marker.addListener(
+        'click',
+        this.handleMarkClick(this.google, marker, iw)
+      );
+
+      if (this.props.match.params.mode === 'edit') {
+        marker.addListener('dragend', this.handleMarkerDragend(marker));
       }
-
-      distance = distanceToNextPoint;
     });
-
-    this.setState({ trailNotes: trailNotes });
   };
 
   handleRouteClickEvent(google, route, evtName) {
     return e => {
       const latlng = e.latLng;
-      const path = route.getPath();
-      let pathDistance = 0;
-      const needle = {
-        minDistance: 9999999999,
-        index: -1,
-        latlng: null,
-        distance: 0
-      };
 
-      path.forEach(function(routePoint, index) {
-        var dist = google.maps.geometry.spherical.computeDistanceBetween(
-          latlng,
-          routePoint
-        );
-        if (dist < needle.minDistance) {
-          needle.minDistance = dist;
-          needle.index = index;
-          needle.latlng = routePoint;
-          needle.distance = pathDistance;
-        }
-
-        if (index !== path.length - 1) {
-          //Not the last point
-          const nextPoint = path.getAt(index + 1);
-          pathDistance += google.maps.geometry.spherical.computeDistanceBetween(
-            routePoint,
-            nextPoint
-          );
-        }
-      });
-
-      alert(
-        `This is the ${(needle.distance * 0.001).toFixed(2)}km of the trail`
+      const nearestMetre = MapHelper.findNearestTrailMetre(
+        google,
+        route,
+        latlng
       );
+
+      alert(`This is the ${(nearestMetre * 0.001).toFixed(2)}km of the trail`);
     };
   }
 
@@ -175,6 +223,16 @@ export class Gr10Map extends Component {
     console.log(JSON.stringify(updatedTrailNote));
   }
 
+  onClose(a, b, c) {
+    let ff = this.map;
+    alert('it closed');
+  }
+
+  onOpen(a, b, c) {
+    let ff = this.map;
+    alert('it onOpen');
+  }
+
   render() {
     const markers = this.state.trailNotes.map(trailNote => {
       let iconUrl = '/tent.png';
@@ -195,13 +253,12 @@ export class Gr10Map extends Component {
           position={trailNote.point}
           icon={{ url: iconUrl }}
           onClick={this.onMarkerClick}
-          draggable={true}
+          draggable={this.state.editMode}
           onDragend={this.onDragEnd}
         />
       );
     });
 
-//              gestureHandling={'greedy'}
     return (
       <div className="row">
         <div className="col-12">
@@ -211,25 +268,7 @@ export class Gr10Map extends Component {
               zoom={8}
               onReady={this.onMapReady}
               initialCenter={{ lat: 42.742489, lng: 0.27881 }}
-
-            >
-              {markers}
-              {this.state.activeTrailNote && (
-                <InfoWindow
-                  marker={this.state.activeMarker}
-                  visible={this.state.showingInfoWindow}
-                >
-                  <div>
-                    <h6>{this.state.activeTrailNote.location}</h6>
-                    <div>
-                      {this.state.activeTrailNote.descriptionEN !== ''
-                        ? this.state.activeTrailNote.descriptionEN
-                        : this.state.activeTrailNote.descriptionFR}
-                    </div>
-                  </div>
-                </InfoWindow>
-              )}
-            </Map>
+            />
           </div>
         </div>
       </div>

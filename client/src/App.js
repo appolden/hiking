@@ -54,7 +54,7 @@ class Gr5Trail extends Component {
     );
   }
 }
-
+//<Route path="/gr10" component={Gr10Map} />
 class App extends Component {
   render() {
     return (
@@ -68,6 +68,7 @@ class App extends Component {
             <Route exact path="/trail/gr5" component={Gr5Trail} />
             <Route path="/bivvy" component={BivouacList} />
             <Route path="/gr10" component={Gr10Map} />
+            <Route path="/gr10-mode/:mode" component={Gr10Map} />
             <Route path="/tools/encodegpx" component={EncodeGpx} />
             <div className="row">
               <div className="col-12">

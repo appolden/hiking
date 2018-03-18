@@ -69,7 +69,7 @@
   {
     "position": "39.5km, 50m",
     "location": "Bivouac du pont du diable",
-    "descriptionFR": "Sur une aire de picnic en zone boisée au bord d'une petite route départementale, eau du gave disponible, 2 kilomètres avant Ainoha en venant de SareEau : toujours présente, Feu : possible, Risque météo : faible (bivouac à coté d'un abri et/ou zone à couvert)",
+    "descriptionFR": "Sur une aire de picnic en zone boisée au bord d'une petite route départementale, eau du gave disponible, 2 kilomètres avant Ainoha en venant de Sare. Eau : toujours présente",
     "descriptionEN": "On a picnic area in a wooded area at the edge of a small departmental road, available water of the Gave, 2 kilometers before Ainoha coming from Sare",
     "locatedAtTrailMetre": 39500
 
@@ -106,27 +106,15 @@
     "descriptionEN": "place of bivouac after the collar of the three crosses level gainekoborda drinking water at will, flat ground, possible fire (hut hunters) open and clean shelter possible in bad weather a 4 stars."
   },
   {
-    "position": "52.8km, 550m",
-    "location": "Ferme d'Esteben",
-    "descriptionFR": "gîte d'étape",
-    "descriptionEN": "",
-    "locatedAtTrailMetre": 52800,
-    "point": {
-      "lat": 43.334732,
-      "lng": -1.217309
-    },
-    "gite": true
-  },
-  {
     "position": "55.10km, 716m",
     "location": "bivouac du col de Mehatche",
-    "descriptionFR": "Belles zones de pelouses plates surplombant la vallée, il y a une maisonnette avec un porche accueillant à 300m du col vers l'est et à 70m à gauche du gr (en venant du col), une source d'eau à une vingtaine de mètres en amont de la maison.Eau : fort risque d'absence, Feu : possible, Risque météo : moyen car zone faiblement exposée (orage et/ou froid en altitude)",
-    "descriptionEN": "Beautiful areas of flat lawns overlooking the valley, there is a small house with a welcoming porch 300m from the pass to the east and 70m to the left of the gr (coming from the pass), a source of water about twenty meters upstream of the house.Water: high risk of absence, Fire: possible, Weather risk: medium because weakly exposed area (thunderstorm and / or cold altitude)"
+    "descriptionFR": "Belles zones de pelouses plates surplombant la vallée, il y a une maisonnette avec un porche accueillant à 300m du col vers l'est et à 70m à gauche du gr (en venant du col), une source d'eau à une vingtaine de mètres en amont de la maison. Eau : fort risque d'absence.",
+    "descriptionEN": "Beautiful areas of flat lawns overlooking the valley, there is a small house with a welcoming porch 300m from the pass to the east and 70m to the left of the gr (coming from the pass), a source of water about twenty meters upstream of the house.Water: high risk of absence."
   },
   {
     "position": "56.7km, 640m",
     "location": "bivouac du col d'Espalza",
-    "descriptionFR": "Une source située hors gr à 300m direction sud-ouest proche de la borne frontière 84, attention source à confirmer en été!!Eau : fort risque d'absence, Feu : non et/ou interdit, Risque météo : Danger! zone très exposée (orage et vent)",
+    "descriptionFR": "Une source située hors gr à 300m direction sud-ouest proche de la borne frontière 84, attention source à confirmer en été!!Eau : fort risque d'absence,",
     "descriptionEN": "A spring located off 300m south-west near border marker 84, source attention to be confirmed in summer !! Water: high risk of absence",
     "locatedAtTrailMetre": 56700,
     "camping": true
