@@ -16,9 +16,8 @@ export class Gr10Map extends Component {
     };
 
     this.onMarkerClick = this.onMarkerClick.bind(this);
+    this.onDragEnd = this.onDragEnd.bind(this);
   }
-
-
 
   addCampingLocationsToMap = (map, google, route) => {
     let path = route.getPath();
@@ -40,9 +39,10 @@ export class Gr10Map extends Component {
         google.maps.geometry.spherical.computeDistanceBetween(point, nextPoint);
 
       const locatedTrailNote = this.trailNotes.find(function(element) {
+        const offset = 1.012845867; // to correct the actual GPX distance compared to the official distance.
         return (
-          element.locatedAtTrailMetre >= distance &&
-          element.locatedAtTrailMetre < distanceToNextPoint &&
+          element.locatedAtTrailMetre * offset >= distance &&
+          element.locatedAtTrailMetre * offset < distanceToNextPoint &&
           element.point === undefined &&
           (element.camping || element.gite)
         );
@@ -50,6 +50,7 @@ export class Gr10Map extends Component {
 
       if (locatedTrailNote !== undefined) {
         locatedTrailNote.point = point;
+        locatedTrailNote.locatedByTrailMile = true;
         trailNotes.push(locatedTrailNote);
       }
 
@@ -59,10 +60,49 @@ export class Gr10Map extends Component {
     this.setState({ trailNotes: trailNotes });
   };
 
+  handleRouteClickEvent(google, route, evtName) {
+    return e => {
+      const latlng = e.latLng;
+      const path = route.getPath();
+      let pathDistance = 0;
+      const needle = {
+        minDistance: 9999999999,
+        index: -1,
+        latlng: null,
+        distance: 0
+      };
+
+      path.forEach(function(routePoint, index) {
+        var dist = google.maps.geometry.spherical.computeDistanceBetween(
+          latlng,
+          routePoint
+        );
+        if (dist < needle.minDistance) {
+          needle.minDistance = dist;
+          needle.index = index;
+          needle.latlng = routePoint;
+          needle.distance = pathDistance;
+        }
+
+        if (index !== path.length - 1) {
+          //Not the last point
+          const nextPoint = path.getAt(index + 1);
+          pathDistance += google.maps.geometry.spherical.computeDistanceBetween(
+            routePoint,
+            nextPoint
+          );
+        }
+      });
+
+      alert(
+        `This is the ${(needle.distance * 0.001).toFixed(2)}km of the trail`
+      );
+    };
+  }
+
   onMapReady = (mapProps, map) => {
     this.map = map;
     this.google = mapProps.google;
-
 
     fetch('/data/gr10/gr10-route.json')
       .then(response => response.json())
@@ -77,6 +117,11 @@ export class Gr10Map extends Component {
           strokeWeight: 4
         });
 
+        //TODO: This handleRouteClickEvent doesn't seem right.
+        this.route.addListener(
+          'click',
+          this.handleRouteClickEvent(this.google, this.route, 'click')
+        );
         this.route.setMap(map);
 
         if (this.trailNotes !== undefined) {
@@ -113,18 +158,45 @@ export class Gr10Map extends Component {
     });
   }
 
+  onDragEnd(props, marker, e) {
+    props.name.point = {
+      lat: marker.getPosition().lat(),
+      lng: marker.getPosition().lng()
+    };
+
+    const updatedTrailNote = {
+      position: props.name.position,
+      point: {
+        lat: marker.getPosition().lat(),
+        lng: marker.getPosition().lng()
+      }
+    };
+
+    console.log(JSON.stringify(updatedTrailNote));
+  }
+
   render() {
     const markers = this.state.trailNotes.map(trailNote => {
+      let iconUrl = '/tent.png';
+
+      if (trailNote.camping && trailNote.locatedByTrailMile) {
+        iconUrl = '/red-tent.svg';
+      }
+
+      if (trailNote.gite) {
+        iconUrl = '/kennel.svg';
+      }
+
       return (
         <Marker
           key={trailNote.position}
           title={trailNote.location}
           name={trailNote}
           position={trailNote.point}
-          icon={{
-            url: trailNote.camping ? '/tent.png' : '/kennel.svg'
-          }}
+          icon={{ url: iconUrl }}
           onClick={this.onMarkerClick}
+          draggable={true}
+          onDragend={this.onDragEnd}
         />
       );
     });
@@ -138,6 +210,7 @@ export class Gr10Map extends Component {
               zoom={8}
               onReady={this.onMapReady}
               initialCenter={{ lat: 42.742489, lng: 0.27881 }}
+              gestureHandling={'greedy'}
             >
               {markers}
               {this.state.activeTrailNote && (

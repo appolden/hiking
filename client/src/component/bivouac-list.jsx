@@ -16,7 +16,7 @@ class BivouacList extends Component {
   render() {
     const bivvies = this.state.bivvies;
 
-    const rowss = bivvies.map((bivvyLocation, index) => (
+    const rows = bivvies.map((bivvyLocation, index) => (
       <div className="row" key={bivvyLocation.position}>
         <div className="col-12">
           <h2>
@@ -42,14 +42,13 @@ class BivouacList extends Component {
               </a>{' '}
               for the information. This page presents the same information in a
               more user friendly layout. It can easily be printed to PDF and
-              accessed offline for those times when there is no cellphone
+              accessed offline for those occasions when there is no cellphone
               coverage and you need to find the next camping spot. Also, a
               portion of the original French has been translated to English.
             </p>
           </div>
         </div>
-
-        {rowss}
+        {rows}
       </React.Fragment>
     );
   }
