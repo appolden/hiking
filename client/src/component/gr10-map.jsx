@@ -201,6 +201,7 @@ export class Gr10Map extends Component {
       );
     });
 
+//              gestureHandling={'greedy'}
     return (
       <div className="row">
         <div className="col-12">
@@ -210,7 +211,7 @@ export class Gr10Map extends Component {
               zoom={8}
               onReady={this.onMapReady}
               initialCenter={{ lat: 42.742489, lng: 0.27881 }}
-              gestureHandling={'greedy'}
+
             >
               {markers}
               {this.state.activeTrailNote && (
