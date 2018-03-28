@@ -58,8 +58,8 @@
   {
     "position": "32.6km, 70m",
     "location": "Bivouac au camping La petite Rhune",
-    "descriptionFR": "Situé à 3km du centre de Sare sur le gr10 et à moins de un kilomètre de la benta Berrouet au niveau de la frontière espagnole Eau : toujours présente",
-    "descriptionEN": "Located 3km from the center of Sare on the GR10 and less than one kilometer from the Berrouet benta at the Spanish border Water: always present /n Small family campsite with trees, very appreciated for its calm and surrounded by greenery. Nice view on the Montains. It is open from early July to late August and has 55 pitches for tents and caravans",
+    "descriptionFR": "Situé à 3km du centre de Sare sur le gr10 et à moins de un kilomètre de la benta Berrouet au niveau de la frontière espagnole /n Eau : toujours présente",
+    "descriptionEN": "Located 3km from the center of Sare on the GR10 and less than one kilometer from the Berrouet benta at the Spanish border Water: always present \n Small family campsite with trees, very appreciated for its calm and surrounded by greenery. Nice view on the Montains. It is open from early July to late August and has 55 pitches for tents and caravans",
     "point": {
       "lat": 43.302383,
       "lng": -1.587439
@@ -69,7 +69,7 @@
   {
     "position": "39.5km, 50m",
     "location": "Bivouac du pont du diable",
-    "descriptionFR": "Sur une aire de picnic en zone boisée au bord d'une petite route départementale, eau du gave disponible, 2 kilomètres avant Ainoha en venant de Sare. Eau : toujours présente",
+    "descriptionFR": "Sur une aire de picnic en zone boisée au bord d'une petite route départementale, eau du gave disponible, 2 kilomètres avant Ainoha en venant de Sare. \nEau : toujours présente",
     "descriptionEN": "On a picnic area in a wooded area at the edge of a small departmental road, available water of the Gave, 2 kilometers before Ainoha coming from Sare",
     "locatedAtTrailMetre": 39500
 
@@ -84,7 +84,7 @@
   {
     "position": "42.3km, 120m",
     "location": "bivouac au Camping Harazpy",
-    "descriptionFR": "Le petit camping familial 1 étoile se trouve à 150m au nord-ouest du centre du village d'Ainhoa, camping ouvert de début avril à fin septembreEau : toujours présente, Feu : non et/ou interdit, Risque météo : faible (bivouac à coté d'un abri et/ou zone à couvert)(photo) Le camping Harazpy petit camping familial de tourisme 1 étoile à Ainhoa vous propose 25 emplacements pour tentes et caravanes.site du camping",
+    "descriptionFR": "Le petit camping familial 1 étoile se trouve à 150m au nord-ouest du centre du village d'Ainhoa, camping ouvert de début avril à fin septembre. \nEau : toujours présente",
     "descriptionEN": "The small family campsite 1 star is located 150m north-west of the village center of Ainhoa, camping open from early April to late September. ",
     "locatedAtTrailMetre": 42300,
     "point": {
@@ -108,14 +108,14 @@
   {
     "position": "55.10km, 716m",
     "location": "bivouac du col de Mehatche",
-    "descriptionFR": "Belles zones de pelouses plates surplombant la vallée, il y a une maisonnette avec un porche accueillant à 300m du col vers l'est et à 70m à gauche du gr (en venant du col), une source d'eau à une vingtaine de mètres en amont de la maison. Eau : fort risque d'absence.",
-    "descriptionEN": "Beautiful areas of flat lawns overlooking the valley, there is a small house with a welcoming porch 300m from the pass to the east and 70m to the left of the gr (coming from the pass), a source of water about twenty meters upstream of the house.Water: high risk of absence."
+    "descriptionFR": "Belles zones de pelouses plates surplombant la vallée, il y a une maisonnette avec un porche accueillant à 300m du col vers l'est et à 70m à gauche du gr (en venant du col), une source d'eau à une vingtaine de mètres en amont de la maison. \nEau : fort risque d'absence.",
+    "descriptionEN": "Beautiful areas of flat lawns overlooking the valley, there is a small house with a welcoming porch 300m from the pass to the east and 70m to the left of the gr (coming from the pass), a source of water about twenty meters upstream of the house. \nWater: high risk of absence."
   },
   {
     "position": "56.7km, 640m",
     "location": "bivouac du col d'Espalza",
-    "descriptionFR": "Une source située hors gr à 300m direction sud-ouest proche de la borne frontière 84, attention source à confirmer en été!!Eau : fort risque d'absence,",
-    "descriptionEN": "A spring located off 300m south-west near border marker 84, source attention to be confirmed in summer !! Water: high risk of absence",
+    "descriptionFR": "Une source située hors gr à 300m direction sud-ouest proche de la borne frontière 84, attention source à confirmer en été!! \nEau : fort risque d'absence,",
+    "descriptionEN": "A spring located off 300m south-west near border marker 84, source attention to be confirmed in summer !! \nWater: high risk of absence",
     "locatedAtTrailMetre": 56700,
     "camping": true
 
@@ -123,35 +123,35 @@
   {
     "position": "63.1km, 159m",
     "location": "Bidarray",
-    "descriptionFR": "ravitaillement à l'épicerie qui est ouverte tous les jours en saison (sauf le dim après midi) de début juin à fin septembre. retrait d'argent sous certaines conditions à l'épicerie du bourg",
-    "descriptionEN": "refueling at the grocery store which is open every day in season (except Sunday afternoon) from early June to late September. withdrawal of money under certain conditions at the village grocery store"
+    "descriptionFR": "Ravitaillement à l'épicerie qui est ouverte tous les jours en saison (sauf le dim après midi) de début juin à fin septembre. Retrait d'argent sous certaines conditions à l'épicerie du bourg.",
+    "descriptionEN": "Refueling at the grocery store which is open every day in season (except Sunday afternoon) from early June to late September. Withdrawal of money under certain conditions at the village grocery store"
   },
   {
     "position": "68.5km, 1044m",
     "location": "Pic d'Iparla",
-    "descriptionFR": "début des crêtes d'Iparla, absence d'eau sur l'ensemble des crêtes",
-    "descriptionEN": "beginning of Iparla peaks, no water on all peaks"
+    "descriptionFR": "Début des crêtes d'Iparla, absence d'eau sur l'ensemble des crêtes",
+    "descriptionEN": "Beginning of Iparla peaks, no water on all peaks"
   },
   {
     "position": "70.8km, 808m",
-    "location": "bivouac du col d'harrieta (crêtes d'Iparla)",
-    "descriptionFR": "Vue magnifique depuis les crêtes. Un bivouac sur les crêtes d'Iparla avec la chance peut-être d'y trouver une vue magnifique le lendemain matin au réveil, attention aux conditions météo qui peuvent rendre ce bivouac dangeureux par temps d'orage surtout. Une source d'eau est présente à 300m. Eau : présence, Feu : possible, Risque météo : fort car zone exposée (orage et vent)",
-    "descriptionEN": "Beautiful view from the ridges. A bivouac on the ridges of Iparla with luck may be to find a magnificent view the next morning when waking up, watch out for the weather conditions that can make this bivouac dangerous in stormy weather especially. A water source is present at 300m. Water: presence, Fire: possible, Weather risk: strong because exposed area (thunderstorm and wind)",
+    "location": "Bivouac du col d'harrieta (crêtes d'Iparla)",
+    "descriptionFR": "Vue magnifique depuis les crêtes. Un bivouac sur les crêtes d'Iparla avec la chance peut-être d'y trouver une vue magnifique le lendemain matin au réveil, attention aux conditions météo qui peuvent rendre ce bivouac dangeureux par temps d'orage surtout. Une source d'eau est présente à 300m. \nEau : présence",
+    "descriptionEN": "Beautiful view from the ridges. A bivouac on the ridges of Iparla with luck may be to find a magnificent view the next morning when waking up, watch out for the weather conditions that can make this bivouac dangerous in stormy weather especially. A water source is present at 300m. \nWater: presence",
     "locatedAtTrailMetre": 70800,
     "camping": true
   },
   {
     "position": "79.3km, 156m",
     "location": "St Etienne de Baigorry",
-    "descriptionFR": "camping à un kilomètre au nord du bourg, ravitaillement,pharmacie, 11 kms de route ou bus vers St-Jean-Pied-de Port",
-    "descriptionEN": "camping one kilometer north of the village, refueling, pharmacy, 11 kms of road or bus to St-Jean-Pied-de-Port",
+    "descriptionFR": "Camping à un kilomètre au nord du bourg, ravitaillement,pharmacie, 11 kms de route ou bus vers St-Jean-Pied-de Port",
+    "descriptionEN": "Camping one kilometer north of the village, refueling, pharmacy, 11 kms of road or bus to St-Jean-Pied-de-Port",
     "camping": true
   },
   {
     "position": "80.1km, 156m",
     "location": "Bivouac au Camping l'Irouleguy",
-    "descriptionFR": "Camping situé à coté du gîte d'étape au nord-est du bourg à 800m du fronton, sanitaires, douches, commodités, ouvert de début mars à mi-décembre) Eau : toujours présente, Feu : non et/ou interdit, Risque météo : faible (bivouac à coté d'un abri et/ou zone à couvert)",
-    "descriptionEN": "Campsite located next to the lodge step north-east of the village 800m from the pediment, toilets, showers, amenities, open from early March to mid-December) Water: always present, Fire: no and / or prohibited, Weather risk : low (bivouac next to a shelter and / or covered area)",
+    "descriptionFR": "Camping situé à coté du gîte d'étape au nord-est du bourg à 800m du fronton, sanitaires, douches, commodités, ouvert de début mars à mi-décembre) \nEau : toujours présente",
+    "descriptionEN": "Campsite located next to the lodge step north-east of the village 800m from the pediment, toilets, showers, amenities, open from early March to mid-December) \nWater: always present",
     "locatedAtTrailMetre": 80100,
     "camping": true,
     "point": {
@@ -162,8 +162,8 @@
   {
     "position": "84.39km, 750m",
     "location": "Bivouac du Col d'Ahraza",
-    "descriptionFR": "Non loin d'un point d'eau, ce bivouac offre une solution intéressante entre St Etienne de Baïgorry et St Jean de Pied de port. (photo) Eau : présence au robinet, Feu : non et/ou interdit, Risque météo : fort car zone exposée (orage et vent)",
-    "descriptionEN": "Not far from a water point, this bivouac offers an interesting solution between St Etienne de Baïgorry and St Jean de Pied de Port. (photo) Water: presence at the tap, Fire: no and / or forbidden, Weather risk: strong because exposed area (storm and wind)",
+    "descriptionFR": "Non loin d'un point d'eau, ce bivouac offre une solution intéressante entre St Etienne de Baïgorry et St Jean de Pied de Port. \nEau : présence au robinet",
+    "descriptionEN": "Not far from a water point, this bivouac offers an interesting solution between St Etienne de Baïgorry and St Jean de Pied de Port. \nWater: presence at the tap",
     "locatedAtTrailMetre": 84400,
     "camping": true
 
@@ -177,14 +177,14 @@
   {
     "position": "97.3km, 159m",
     "location": "Saint-Jean-Pied-de-Port",
-    "descriptionFR": "ravitaillement,chambres d'hôtes, hôtels, restaurants, pharmacie, gîte",
+    "descriptionFR": "Ravitaillement, chambres d'hôtes, hôtels, restaurants, pharmacie, gîte",
     "descriptionEN": ""
   },
   {
     "position": "97.3km, 159m",
-    "location": "bivouac au Camping Municipal Plaza Berri",
-    "descriptionFR": "Camping à proximité de la vieille ville, haut lieu historique, la croisée des chemins avec les pèlerins de St Jacques, ouvert de mi-avril à fin octobreEau : toujours présente, Feu : non et/ou interdit, Risque météo : faible (bivouac à coté d'un abri et/ou zone à couvert)",
-    "descriptionEN": "Camping near the old town, historical site, the crossroads with the pilgrims of St Jacques, open from mid-April to end of October Water: always present, Fire: no and / or forbidden, Weather risk: low (bivouac in next to a shelter and / or covered area)",
+    "location": "Bivouac au Camping Municipal Plaza Berri",
+    "descriptionFR": "Camping à proximité de la vieille ville, haut lieu historique, la croisée des chemins avec les pèlerins de St Jacques, ouvert de mi-avril à fin octobre. \nEau : toujours présente",
+    "descriptionEN": "Camping near the old town, historical site, the crossroads with the pilgrims of St Jacques, open from mid-April to end of October \nWater: always present",
     "locatedAtTrailMetre": 97300,
     "camping": true,
     "point": {
@@ -195,14 +195,14 @@
   {
     "position": "108.8km, 231m",
     "location": "Esterençuby",
-    "descriptionFR": "gîte d'étape ravitaillement robinet d'eau prés de l'église au niveau du cimetière",
-    "descriptionEN": "topover refueling water tap near the church at the cemetery"
+    "descriptionFR": "Gîte d'étape, ravitaillement, robinet d'eau prés de l'église au niveau du cimetière",
+    "descriptionEN": "Water tap near the church at the cemetery"
   },
   {
     "position": "113.6km, 640m",
     "location": "bivouac gîte d'étape de Kaskoleta (route de Phagalcette)",
-    "descriptionFR": "Le gîte permet aux randonneurs de pouvoir bivouaquer sur place, repas, douches, etc... à priori ouvert toute l'annéeEau : toujours présente, Feu : non et/ou interdit, Risque météo : faible (bivouac à coté d'un abri et/ou zone à couvert)",
-    "descriptionEN": "The cottage allows hikers to bivouac on site, meals, showers, etc ... a priori open all year Water: always present, Fire: no and / or prohibited, Weather risk: low (bivouac next to a shelter and / or covered area)",
+    "descriptionFR": "Le gîte permet aux randonneurs de pouvoir bivouaquer sur place, repas, douches, etc... à priori ouvert toute l'année. \nEau : toujours présente",
+    "descriptionEN": "The cottage allows hikers to bivouac on site, meals, showers, etc ... a priori open all year. \nWater: always present",
     "locatedAtTrailMetre": 113600,
     "camping": true,
     "point": {
@@ -219,8 +219,8 @@
   {
     "position": "117.7km, 660m",
     "location": "bivouac aux bordes d'inzarrazquy",
-    "descriptionFR": "Aux bordes d'inzarrazquy, de l'eau de ruisseau, feu possible, le lieu est situé dans la zone où le gr10 quitte une piste pour emprunter un sentier abrupte menant directement au Col d'Irau, impossible à rater. Eau : présence fréquente, Feu : possible, Risque météo : moyen car zone faiblement exposée (orage et/ou froid en altitude)",
-    "descriptionEN": "At the edge of inzarrazquy, creek water, fire possible, the place is located in the area where the gr10 leaves a track to take a steep path leading directly to the Col d'Irau, impossible to miss. Water: frequent presence",
+    "descriptionFR": "Aux bordes d'inzarrazquy, de l'eau de ruisseau, feu possible, le lieu est situé dans la zone où le gr10 quitte une piste pour emprunter un sentier abrupte menant directement au Col d'Irau, impossible à rater. \nEau : présence fréquente",
+    "descriptionEN": "At the edge of inzarrazquy, creek water, fire possible, the place is located in the area where the gr10 leaves a track to take a steep path leading directly to the Col d'Irau, impossible to miss. \nWater: frequent presence",
     "locatedAtTrailMetre": 117700,
     "camping": true
 
@@ -234,8 +234,8 @@
   {
     "position": "123km, 1456m",
     "location": "bivouac des sommets d'Occabé",
-    "descriptionFR": "Attention pas d'eau et très exposé!! vue imprenable!! DANGER par temps d'orage. Un endroit hors du temps. Eau : absence",
-    "descriptionEN": "Attention no water and very exposed !! amazing views!! DANGER during thunderstorms. Water: absence",
+    "descriptionFR": "Attention pas d'eau et très exposé!! vue imprenable!! DANGER par temps d'orage. Un endroit hors du temps. \nEau : absence",
+    "descriptionEN": "Attention no water and very exposed !! amazing views!! DANGER during thunderstorms. \nWater: absence",
     "locatedAtTrailMetre": 123000,
     "camping": true,
     "point": {
@@ -246,13 +246,13 @@
   {
     "position": "126.2km, 1000m",
     "location": "Chalet Pédro",
-    "descriptionFR": "pas d'accueil radonneur itinérant",
+    "descriptionFR": "Pas d'accueil radonneur itinérant",
     "descriptionEN": ""
   },
   {
     "position": "126.3km, 1000m",
     "location": "bivouac à proximité du Chalet Pédro",
-    "descriptionFR": "Ce bivouac est juste sur le côté ouest de la piste près du Chalet Pédro. ",
+    "descriptionFR": "Ce bivouac est juste sur le côté ouest de la piste près du Chalet Pédro.",
     "descriptionEN": "",
     "locatedAtTrailMetre": 126300,
     "camping": true,
@@ -264,7 +264,7 @@
   {
     "position": "126.7km, 1000m",
     "location": "bivouac sur l'aire de camping naturel de Iraty-Cize",
-    "descriptionFR": "6.5kms de route cers le col d'IrauZone herbeuse située sur le gr10 en amont du barrage de Iraty-Cize, très fréquentée par les camping-cars, eau de ruisseau, feu possible, ouvert toute l'année Eau : toujours présente, Feu : possible, Risque météo : moyen car zone faiblement exposée",
+    "descriptionFR": "6.5kms de route cers le col d'IrauZone herbeuse située sur le gr10 en amont du barrage de Iraty-Cize, très fréquentée par les camping-cars, eau de ruisseau, feu possible, ouvert toute l'année. \nEau: toujours présente",
     "descriptionEN": "6.5km from the road to the IrauZone grassy pass located on the Gr10 upstream of the Iraty-Cize dam, very frequented by motorhomes, creek water, fire possible, open all year.",
     "locatedAtTrailMetre": 126700,
     "camping": true,
@@ -276,8 +276,8 @@
   {
     "position": "129.1km, 1110m",
     "location": "bivouac du lac d'Iraty barrage",
-    "descriptionFR": "3.7kms de route vers le Col de BagargiakEn amont du barage dans la forêt hors gr10 le long du ruisseau, de nombreuses possibilités, zone forestière dense, eau du ruisseau Eau : toujours présente, Feu : possible, Risque météo : faible (bivouac à coté d'un abri et/ou zone à couvert)",
-    "descriptionEN": "3.7kms drive to Bagargiak Pass. Before the dam in the forest off Gr10 along the creek, many possibilities, dense forest area, water creek Water: always present",
+    "descriptionFR": "3.7kms de route vers le Col de Bagargiak. En amont du barage dans la forêt hors gr10 le long du ruisseau, de nombreuses possibilités, zone forestière dense, eau du ruisseau. \nEau: toujours présente",
+    "descriptionEN": "3.7kms drive to Bagargiak Pass. Before the dam in the forest off Gr10 along the creek, many possibilities, dense forest area, water creek. \nWater: always present",
     "locatedAtTrailMetre": 129100,
     "camping": true,
     "point": {
@@ -300,8 +300,8 @@
   {
     "position": " 141.18km, 1030m ",
     "location": " bivouac de Bagozabalaga ",
-    "descriptionFR": "Ce bivouac est situé sur la longue ligne de crête reliant Iraty à Logibar. Pas d'eau, zone exposée aux orages, pas d'autre solution à proximité sur cette portion du gr10. Eau : absence, Feu : possible, Risque météo : fort car zone exposée (orage et/ou froid en altitude) ",
-    "descriptionEN": "This bivouac is located on the long ridge line connecting Iraty to Logibar. No water, area exposed to storms, no other solution nearby on this portion of gr10. Water: absence",
+    "descriptionFR": "Ce bivouac est situé sur la longue ligne de crête reliant Iraty à Logibar. Pas d'eau, zone exposée aux orages, pas d'autre solution à proximité sur cette portion du gr10. \nEau: absence",
+    "descriptionEN": "This bivouac is located on the long ridge line connecting Iraty to Logibar. No water, area exposed to storms, no other solution nearby on this portion of gr10. \nWater: absence",
     "locatedAtTrailMetre": 141180,
     "camping": true
   },
@@ -320,15 +320,15 @@
   {
     "position": " 162.7km, 830m ",
     "location": " bivouac des Granges Errékaltia ",
-    "descriptionFR": " 4km aprés le passage du col de Kurutché (sens ouest-est) après avoir quitté définitivement la piste menant au col, à coté d'une bergerie et d'un ruisseau, zone exposée. Eau : fort risque d'absence",
-    "descriptionEN": "4km after crossing the Kurutché pass (east-west direction) after having definitively left the track leading to the pass, next to a sheepfold and a stream, exposed area. Water: high risk of absence",
+    "descriptionFR": " 4km aprés le passage du col de Kurutché (sens ouest-est) après avoir quitté définitivement la piste menant au col, à coté d'une bergerie et d'un ruisseau, zone exposée. \nEau: fort risque d'absence",
+    "descriptionEN": "4km after crossing the Kurutché pass (east-west direction) after having definitively left the track leading to the pass, next to a sheepfold and a stream, exposed area. \nWater: high risk of absence",
     "locatedAtTrailMetre": 162700,
     "camping": true
   },
   {
     "position": " 169.8km, 620m ",
     "location": "bivouac du gîte d'étape Maison Elichalt (Sainte Engraçe)",
-    "descriptionFR": "gîte d'étape 12kms de route vers La-Pierre-St-Martin. Le gîte est en face de l'église, impossible à manquer. Eau : toujours présente",
+    "descriptionFR": "gîte d'étape 12kms de route vers La-Pierre-St-Martin. Le gîte est en face de l'église, impossible à manquer. \nEau : toujours présente",
     "descriptionEN": "",
     "locatedAtTrailMetre": 169800,
     "camping": true
@@ -342,9 +342,9 @@
   },
   {
     "position": " 180.6km, 1700m ",
-    "location": "bivouac à coté du refuge Jeandel (La Pierre-St-Martin)",
-    "descriptionFR": " bivouac à coté du refuge Jeandel, eau, terrain plat, exposé, préférer le refuge!!, le refuge est ouvert toute l'année (sur réservation) excepté octobre et novembre. Eau : toujours présente, Feu : non et/ou interdit, Risque météo : faible (bivouac à coté d'un abri et/ou zone à couvert)",
-    "descriptionEN": "bivouac next to the refuge Jeandel, water, flat ground, exposed, prefer refuge !!, the refuge is open all the year (on reservation) except October and November. Water: always present",
+    "location": "Bivouac à coté du refuge Jeandel (La Pierre-St-Martin)",
+    "descriptionFR": "Bivouac à coté du refuge Jeandel, eau, terrain plat, exposé, préférer le refuge!!, le refuge est ouvert toute l'année (sur réservation) excepté octobre et novembre. \nEau: toujours présente",
+    "descriptionEN": "Bivouac next to the refuge Jeandel, water, flat ground, exposed, prefer refuge !!, the refuge is open all the year (on reservation) except October and November. \nWater: always present",
     "locatedAtTrailMetre": 180600,
     "camping": true,
     "point": {
@@ -361,8 +361,8 @@
   {
     "position": "187.5km, 1689m",
     "location": "bivouac de la cabane du cap de la baitch",
-    "descriptionFR": "bivouac à coté de la cabane de berger, il sera de bon ton de demander l'autorisation au berger pour bivouaquer en ces lieux",
-    "descriptionEN": "bivouac next to the shepherd's hut, it will be fashionable to ask permission to the shepherd to bivouac in these places",
+    "descriptionFR": "Bivouac à coté de la cabane de berger, il sera de bon ton de demander l'autorisation au berger pour bivouaquer en ces lieux",
+    "descriptionEN": "Bivouac next to the shepherd's hut, it will be fashionable to ask permission to the shepherd to bivouac in these places",
     "locatedAtTrailMetre": 187500,
     "camping": true,
     "point": {
@@ -373,8 +373,8 @@
   {
     "position": " 188.7km, 1570m ",
     "location": " bivouac à coté de la cabane d'Ardinet ",
-    "descriptionFR": "A coté de la cabane d'Ardinet, terrain plat le long du court d'eau situé à 150m de la cabane, si les conditions se dégradent, il restera toujours la possibilité de dormir dans la cabane, un magnifique panorama s'offre à vous sur les orgues de camplong. Eau : très fréquente",
-    "descriptionEN": "Next to the Ardinet hut, flat land along the water court located 150m from the hut, if conditions deteriorate, there will always be the possibility of sleeping in the hut, a magnificent panorama is offered to you on the organs of camplong. Water: very frequent",
+    "descriptionFR": "A coté de la cabane d'Ardinet, terrain plat le long du court d'eau situé à 150m de la cabane, si les conditions se dégradent, il restera toujours la possibilité de dormir dans la cabane. \nEau : très fréquente",
+    "descriptionEN": "Next to the Ardinet hut, flat land along the water court located 150m from the hut, if conditions deteriorate, there will always be the possibility of sleeping in the hut. \nWater: very frequent",
     "locatedAtTrailMetre": 188700,
     "camping": true,
     "point": {
@@ -385,7 +385,7 @@
   {
     "position": " 191,1km, 1430m ",
     "location": " bivouac à coté du refuge de Labérouat ",
-    "descriptionFR": "Le refuge de Labérouat est situé sur le gr10. Eau : très fréquente, Feu : non et/ou interdit",
+    "descriptionFR": "Le refuge de Labérouat est situé sur le gr10. \nEau: très fréquente",
     "descriptionEN": "",
     "locatedAtTrailMetre": 191100,
     "camping": true,
@@ -401,10 +401,10 @@
     "descriptionEN": "A multi-service grocery store is available in the village center \nMaud & David will have the pleasure of welcoming you to their little mountain grocery store where everything will be done to satisfy you. You will find cold meats, cheese from local producers, dishes cooked by their care and also blueberry pies, clafoutis, banana chocolate pies, etc ... the grocery store is usually open from 8:00 to 13:30 and 16:00 to 19:00."
   },
   {
-    "position": " 196.6km, 820m ",
-    "location": " bivouac au camping municipal du Lauzart de Lescun",
-    "descriptionFR": " également gîte de 2 dortoirs de 10 et un dortoir de 5 places ouvert toute l'année. Eau : toujours présente, Feu : non et/ou interdit, Risque météo : faible (bivouac à coté d'un abri et/ou zone à couvert (site du camping)",
-    "descriptionEN": "The campsite has a grocery store and a bread store, and there is a grocery store within a 5-minute drive of Lescun village square, where you can also enjoy a sandwich, a drink and ice cream. or other snacks.We are willing to make you breakfast and evening meals. Laundry is also available.",
+    "position": "196.6km, 820m ",
+    "location": "Bivouac au camping municipal du Lauzart de Lescun",
+    "descriptionFR": "également gîte de 2 dortoirs de 10 et un dortoir de 5 places ouvert toute l'année. \nEau: toujours présente",
+    "descriptionEN": "The campsite has a grocery store and a bread store, and there is a grocery store within a 5-minute drive of Lescun village square, where you can also enjoy a sandwich, a drink and ice cream. or other snacks. We are willing to make you breakfast and evening meals. Laundry is also available.",
     "locatedAtTrailMetre": 196600,
     "camping": true,
     "point": {
@@ -415,7 +415,7 @@
   {
     "position": "201.2km, 1000m ",
     "location": "bivouac au camping du gîte d'étape de Lhers",
-    "descriptionFR": "25 emplacements sur des terrasses herbeuses avec une vue dégagée sur le plateau et les montagnes. Venez nous retrouver au coeur du Plateau de Lhers en haute Vallée d'Aspe! Situé en bordure du GR10, le camping dispose de 25 emplacements situés sur des terrasses herbeuses. Vous aurez accès aux sanitaires communs avec le gîte: douches, toilettes,éviers, espace laverie.A votre service: barbecue, micro-ondes, plaques électriques, accès WIFI, dépôt de pain et viennoiseries, petite dépannage alimentaire, boissons et restauration et en juillet et août nous installons un barnum pour les journées et.... nuits de mauvais temps et d'orage... Marie Pierre...\"Eau : toujours présente, Feu : non et/ou interdit, Risque météo : faible (bivouac à coté d'un abri et/ou zone à couvert (site du camping)",
+    "descriptionFR": "25 emplacements sur des terrasses herbeuses avec une vue dégagée sur le plateau et les montagnes. Venez nous retrouver au coeur du Plateau de Lhers en haute Vallée d'Aspe! Situé en bordure du GR10, le camping dispose de 25 emplacements situés sur des terrasses herbeuses. Vous aurez accès aux sanitaires communs avec le gîte: douches, toilettes,éviers, espace laverie.A votre service: barbecue, micro-ondes, plaques électriques, accès WIFI, dépôt de pain et viennoiseries, petite dépannage alimentaire, boissons et restauration et en juillet et août nous installons un barnum pour les journées et.... nuits de mauvais temps et d'orage \nEau: toujours présente",
     "descriptionEN": "Located on the edge of the GR10, the campsite has 25 pitches located on grassy terraces. You will have access to common toilets with the cottage: showers, toilets, sinks, laundry area. \n At your service: barbecue, microwave, hotplates, WIFI access, bread and pastries, small food, drinks and catering.",
     "locatedAtTrailMetre": 201200,
     "camping": true,
@@ -433,7 +433,7 @@
   {
     "position": " 205km, 1515m ",
     "location": " bivouac de la cabane ruinée d’Udapet-le-Haut ",
-    "descriptionFR": "Eau du ruisseau, le bivouac se trouve 500m à l'est du col de Barrancq. Eau : fort risque d'absence, Feu : possible, Risque météo : moyen car zone faiblement exposée (orage et/ou froid en altitude)",
+    "descriptionFR": "Eau du ruisseau, le bivouac se trouve 500m à l'est du col de Barrancq. Eau: fort risque d'absence",
     "descriptionEN": "Water from the creek, the bivouac is located 500m east of the Col de Barrancq.",
     "locatedAtTrailMetre": 205000,
     "camping": true,
@@ -445,14 +445,14 @@
   {
     "position": "210.4km, 597m",
     "location": "Etsaut - Borce",
-    "descriptionFR": "gîte d'étape . bus TER vers Pau ",
+    "descriptionFR": "gîte d'étape. Bus TER vers Pau ",
     "descriptionEN": ""
   },
   {
     "position": "210.4km, 597m ",
     "location": "bivouac d'Etsaut",
-    "descriptionFR": "De nombreuses zones où planter la tente situées entre le gave et l'ancienne voie férrée, eau du gave, commercesEau : toujours présente, Feu : non et/ou interdit, Risque météo : moyen car zone faiblement exposée (orage et/ou froid en altitude)\"...Montage de la tente proche du torrent,...Durant la nuit, pas mal de musique venant de Borce, car c’est la fête du village ce soir là... lien",
-    "descriptionEN": "Many areas where to pitch the tent located between the gave and the old railroad, water of the gave, trade",
+    "descriptionFR": "De nombreuses zones où planter la tente situées entre le gave et l'ancienne voie férrée, eau du gave, commerces \nEau : toujours présente",
+    "descriptionEN": "Many areas where to pitch the tent located between the gave and the old railroad",
     "locatedAtTrailMetre": 210400,
     "camping": true
   },
@@ -465,7 +465,7 @@
   {
     "position": " 219.0km, 1560m ",
     "location": " bivouac à coté de la cabane de la Baigt de Saint-Cours ",
-    "descriptionFR": "règles bivouac Parc Naturel Terrain plat à proximité de la passerelle à coté de la cabaneEau : toujours présente, Feu : possible, Risque météo : moyen car zone faiblement exposée (orage et/ou froid en altitude)(photo)   \"...je ne m’arrête pas ou rarement et très rapidement comme à la cabane de Baigt Sencours où je jette un petit coup d'oeil (bivouac possible)...lien",
+    "descriptionFR": "règles bivouac Parc Naturel Terrain plat à proximité de la passerelle à coté de la cabaneEau : toujours présente",
     "descriptionEN": "",
     "locatedAtTrailMetre": 205000,
     "camping": true
@@ -479,8 +479,8 @@
   {
     "position": "224km, 1940m",
     "location": "bivouac des lacs d'ayous à coté du refuge d'étape d'Ayous",
-    "descriptionFR": "le gr10 officiel sur carte IGN ne passe pas par le refuge de Pombie et ne fait donc pas le tour de l'Ossau, sur place, vous aurez donc le choix. prévoir 7h00 de plus par cet itinéraire!règles bivouac Parc Naturelbivouac à coté du refuge d'Ayous, des lacs Gentau, Miey et Roumassot, exposé, danger par temps d'orage mais le refuge des lacs d'Ayous se trouve à proximité. Eau : toujours présente, Feu : non et/ou interdit, Risque météo : Danger! zone très exposée (orage et/ou froid en altitude) \"Pas mal de personnes bivouaquent ce samedi au bord du lac. Il règne une ambiance de plage... avec le sable en moins. Aussi, pour être au calme, j’installe ma tente à l’opposé du refuge. L’eau du lac est froide sans être glaciale mais le courage me manque toujours pour y faire un plongeon.... lien \" \"...Le temps humide nous décourage de descendre sur les prairies, au bord du lac, qui doivent être gorgées d’eau. C’est aussi l’avis du gardien. Il nous indique un endroit où bivouaquer, à quelques mètres du refuge. Nous nous écartons un peu, nous rapprochant de la limite du parc national, là où il y a de l’herbe. Nous trouvons un petit carré à peu près plat, à l’abri du regard des gens qui sont au refuge... lien ",
-    "descriptionEN": "the official GR10 on IGN map does not go through the shelter of Pombie and so does not go around the Ossau. bivouac next to the refuge of Ayous, lakes Gentau, Miey and Roumassot, exposed, danger in stormy weather but the refuge of the lakes of Ayous is nearby. Water: always present.",
+    "descriptionFR": "le gr10 officiel sur carte IGN ne passe pas par le refuge de Pombie et ne fait donc pas le tour de l'Ossau, sur place, vous aurez donc le choix. prévoir 7h00 de plus par cet itinéraire!règles bivouac Parc Naturelbivouac à coté du refuge d'Ayous, des lacs Gentau, Miey et Roumassot, exposé, danger par temps d'orage mais le refuge des lacs d'Ayous se trouve à proximité. \nEau: toujours présente",
+    "descriptionEN": "the official GR10 on IGN map does not go through the shelter of Pombie and so does not go around the Ossau. bivouac next to the refuge of Ayous, lakes Gentau, Miey and Roumassot, exposed, danger in stormy weather but the refuge of the lakes of Ayous is nearby. \nWater: always present.",
     "locatedAtTrailMetre": 224000,
     "camping": true
   },
@@ -495,7 +495,7 @@
   {
     "position": "228.8km, 1422m",
     "location": "bivouac du lac barage de Bious Artigue",
-    "descriptionFR": "règles bivouac Parc Naturel cabane de Bious Oumette en bas du Barrage (voir point info ci-coté)Terrain plat, eau, attention, endroit fréquenté pas forcément isolé et agréable, une solution possible mais je préfère le bivouac précédent ou mieux encore, le suivantEau : toujours présente, Feu : possible, Risque météo : moyen car zone faiblement exposée (orage et/ou froid en altitude)",
+    "descriptionFR": "règles bivouac Parc Naturel cabane de Bious Oumette en bas du Barrage (voir point info ci-coté)Terrain plat, eau, attention, endroit fréquenté pas forcément isolé et agréable, une solution possible mais je préfère le bivouac précédent ou mieux encore, le suivant\nEau : toujours présente",
     "descriptionEN": "Flat land, water, attention, place frequented not necessarily isolated and pleasant, a possible solution but I prefer the previous bivouac or better still, the following one.",
     "locatedAtTrailMetre": 228800,
     "camping": true
@@ -509,7 +509,7 @@
   {
     "position": "233km, 1050m",
     "location": "bivouac de Gabas",
-    "descriptionFR": "Sortie provisoire du Parc National des Pyrénées (voir carte des parcs traversés par le gr10)A partir du lac de Bious Artigues, le gr10 longe la D231 sur plus de 3km avant de bifurquer sur un petit chemin à gauche de la route, le bivouac se trouve dans la prairie en contre bas de ce chemin 100m plus loin.Eau : toujours présente, Feu : possible, Risque météo : faible (bivouac à coté d'un abri et/ou zone à couvert) \"...nous trouvons notre lieu de bivouac. Avant d’arriver à Gabas, le gr10 quitte la route par un petit chemin virant à gauche et longe un petit muret. Nous enjambons ce petit mur et nous retrouvons en compagnie des vaches (inquiétantes) qui ne semblent pas contentes de nous voir débarquer là. Peu importe, nous nous faisons discrets et trouvons plus bas un lieu de bivouac idéal, avec eau, feu et terrain plat... lien ",
+    "descriptionFR": "Sortie provisoire du Parc National des Pyrénées (voir carte des parcs traversés par le gr10)A partir du lac de Bious Artigues, le gr10 longe la D231 sur plus de 3km avant de bifurquer sur un petit chemin à gauche de la route, le bivouac se trouve dans la prairie en contre bas de ce chemin 100m plus loin. \nEau: toujours présente  ...nous trouvons notre lieu de bivouac. Avant d’arriver à Gabas, le gr10 quitte la route par un petit chemin virant à gauche et longe un petit muret. Nous enjambons ce petit mur et nous retrouvons en compagnie des vaches (inquiétantes) qui ne semblent pas contentes de nous voir débarquer là. Peu importe, nous nous faisons discrets et trouvons plus bas un lieu de bivouac idéal, avec eau, feu et terrain plat... lien ",
     "descriptionEN": "From Lake Bious Artigues, the GR10 runs along the D231 for more than 3km before forking on a small path to the left of the road, the camp is in the meadow below this path 100m further.",
     "locatedAtTrailMetre": 233000,
     "camping": true
@@ -523,15 +523,15 @@
   {
     "position": "241km, 1650m",
     "location": "bivouac à coté de la cabane de Cézy  ",
-    "descriptionFR": "prévoir une carte au 1/25000ème pour plus de tranquilité dans l'orientationLa cabane de Cézy se trouve à 500m du gr10 au nord de celui-ci, elle est implantées sur une immense zone de plat dominant la vallée sauvage du Soussouéou, en venant de Hendaye : une fois sorti de la forêt vous marchez à flanc de montagne pendant 20min environ avant de trouver le chemin de la cabane sur votre gauche. En venant de Banyuls, une fois passé la hourquette d'Arre, vous longerez la montagne située sur votre droite sur plus de six kilomètres (2heures de marche) avant de trouver la bifurcation sur votre droite (si vous vous retrouvez dans la grande descente de la foret celà voudra dire que vous êtes allés trop loin) attention, endroit de bivouac exposé donc danger. De l'eau présente à 50m à l'est des cabanes (mais prévoir des bouteilles au cas ou ) (photo)Eau : fort risque d'absence, Feu : non et/ou interdit, Risque météo : Danger! zone très exposée (orage et/ou froid en altitude)  \"...On cherche un endroit plat, pas en vue de la cabane du berger et pas trop près des troupeaux pour ne déranger personne, sur la gauche en entrant dans la prairie. Nous repérons un ruisseau sur le flanc est du vallon, à droite en allant vers la cabane du berger, après des abris bâchés. En le remontant, on trouve la source et le tuyau qui signale l’eau pure. Et comme le brouillard est devenu épais, on peut faire un brin de toilette dans le ruisseau, en toute discrétion... lien ",
-    "descriptionEN": "The hut of Cézy is 500m from gr10 north of it, it is located on a huge area of ​​flat overlooking the wild valley Soussouéou, coming from Hendaye: once out of the forest you walk on the mountainside for about 20min before finding the path of the hut on your left. Coming from Banyuls, once past the Arre hike, you will follow the mountain on your right for more than six kilometers (2 hours of walk) before finding the junction on your right (if you find yourself in the great descent of the forest will mean that you have gone too far, so be careful, there is danger of a bivouac spot. Water present at 50m to the east of the huts (but provide bottles in case) (photo) Water:High risk of absence",
+    "descriptionFR": "prévoir une carte au 1/25000ème pour plus de tranquilité dans l'orientationLa cabane de Cézy se trouve à 500m du gr10 au nord de celui-ci, elle est implantées sur une immense zone de plat dominant la vallée sauvage du Soussouéou, en venant de Hendaye : une fois sorti de la forêt vous marchez à flanc de montagne pendant 20min environ avant de trouver le chemin de la cabane sur votre gauche. En venant de Banyuls, une fois passé la hourquette d'Arre, vous longerez la montagne située sur votre droite sur plus de six kilomètres (2heures de marche) avant de trouver la bifurcation sur votre droite (si vous vous retrouvez dans la grande descente de la foret celà voudra dire que vous êtes allés trop loin) attention, endroit de bivouac exposé donc danger. De l'eau présente à 50m à l'est des cabanes (mais prévoir des bouteilles au cas ou ) \nEau: fort risque d'absence,   ..On cherche un endroit plat, pas en vue de la cabane du berger et pas trop près des troupeaux pour ne déranger personne, sur la gauche en entrant dans la prairie. Nous repérons un ruisseau sur le flanc est du vallon, à droite en allant vers la cabane du berger, après des abris bâchés. En le remontant, on trouve la source et le tuyau qui signale l’eau pure. Et comme le brouillard est devenu épais, on peut faire un brin de toilette dans le ruisseau, en toute discrétion... lien ",
+    "descriptionEN": "The hut of Cézy is 500m from gr10 north of it, it is located on a huge area of ​​flat overlooking the wild valley Soussouéou, coming from Hendaye: once out of the forest you walk on the mountainside for about 20min before finding the path of the hut on your left. Coming from Banyuls, once past the Arre hike, you will follow the mountain on your right for more than six kilometers (2 hours of walk) before finding the junction on your right (if you find yourself in the great descent of the forest will mean that you have gone too far, so be careful, there is danger of a bivouac spot. Water present at 50m to the east of the huts (but provide bottles in case)\nWater:High risk of absence",
     "locatedAtTrailMetre": 241000,
     "camping": true
   },
   {
     "position": "244.4km, 1850m",
     "location": "bivouac au bord ruisseau Cujalal de Hourtanel ",
-    "descriptionFR": "Avant de franchir la Hourquette d'Arre, le sentier traverse un ruisseau au lieu dit Cujalal de Hourtanel noté dans le topo-guide. zone exposée, Attention danger orages, eau du ruisseauEau : très fréquente, Feu : non et/ou interdit, Risque météo : Danger! zone très exposée (orage et/ou froid en altitude) \"le GR traverse une rivière au lieu dit Cujalal de Hourtanel dans le topo-guide. Il est 15h00, je viens de marcher 7 heures. Le paysage est de toute beauté et mes pieds me disent STOP ! Le lieu est idéal : un terrain plat pour ma tente, une rivière pour me laver et nettoyer mes vêtements pleins de sueur… Je n'hésite pas longtemps à bivouaquer ici.... lien \" \"...Ils se sont arrêtés à l'endroit où le GR franchit un torrent. Je descends en contre-bas pour choisir un endroit où je vais pouvoir planter la tente. J'en trouve un près d'un gros rocher, sur une pelouse bien verte et bien plane, pas trop loin du torrent mais suffisamment pour ne pas être assommé par le bruit... lien ",
+    "descriptionFR": "Avant de franchir la Hourquette d'Arre, le sentier traverse un ruisseau au lieu dit Cujalal de Hourtanel noté dans le topo-guide. zone exposée, Attention danger orages, eau du ruisseau\nEau : très fréquente, ...le GR traverse une rivière au lieu dit Cujalal de Hourtanel dans le topo-guide. Il est 15h00, je viens de marcher 7 heures. Le paysage est de toute beauté et mes pieds me disent STOP ! Le lieu est idéal : un terrain plat pour ma tente, une rivière pour me laver et nettoyer mes vêtements pleins de sueur… Je n'hésite pas longtemps à bivouaquer ici.... lien \" \"...Ils se sont arrêtés à l'endroit où le GR franchit un torrent. Je descends en contre-bas pour choisir un endroit où je vais pouvoir planter la tente. J'en trouve un près d'un gros rocher, sur une pelouse bien verte et bien plane, pas trop loin du torrent mais suffisamment pour ne pas être assommé par le bruit... lien ",
     "descriptionEN": "Before crossing the Hourquette d'Arre, the trail crosses a stream at a place called Cujalal de Hourtanel noted in the guidebook. exposed area, Warning danger storms. Water: very common"
   },
   {
@@ -543,7 +543,7 @@
   {
     "position": "249.7km, 2068m",
     "location": "bivouac du lac d'Anglas ",
-    "descriptionFR": "Lac sur le gr10, zone exposée, fréquentée en journée, eau et terrain plat à volonté, cette zone de bivouac est bien connue des photographes et pêcheursEau : toujours présente, Feu : non et/ou interdit, Risque météo : Danger! zone très exposée (orage et/ou froid en altitude) \"...photo d'un bivouac pendant une session de repérage en 2010, au bord du lac d'Anglas... lien \" \"...jusqu'au Lac d'Anglàs via le GR10. bivouac au lac d'Anglàs pour la nuit... lien ",
+    "descriptionFR": "Lac sur le gr10, zone exposée, fréquentée en journée, eau et terrain plat à volonté, cette zone de bivouac est bien connue des photographes et pêcheurs\nEau : toujours présente",
     "descriptionEN": "Lake on the gr10, exposed area, frequented by day, water and flat terrain at will, this bivouac area is well known to photographers and fishermen. Water: always present",
     "locatedAtTrailMetre": 249700,
     "camping": true
@@ -557,8 +557,8 @@
   {
     "position": "251.9km, 1573m",
     "location": "bivouac des ruines des cabanes du plaa de Batch",
-    "descriptionFR": "Une zone de plat 1,2km avant d'arriver à Gourette en venant de l'ouest, le ruisseau Valentin coulant vers Gourette traverse cette zone herbeuse où de nombreuses zones de bivouacs seront possibles. Eau : toujours présente, Feu : non et/ou interdit, Risque météo : fort car zone exposée (orage et/ou froid en altitude).",
-    "descriptionEN": "A 1.2km flat area before arriving at Gourette coming from the west, the Valentin stream flowing towards Gourette crosses this grassy area where many bivouac areas will be possible. Water: always present,",
+    "descriptionFR": "Une zone de plat 1,2km avant d'arriver à Gourette en venant de l'ouest, le ruisseau Valentin coulant vers Gourette traverse cette zone herbeuse où de nombreuses zones de bivouacs seront possibles. \nEau: toujours présente",
+    "descriptionEN": "A 1.2km flat area before arriving at Gourette coming from the west, the Valentin stream flowing towards Gourette crosses this grassy area where many bivouac areas will be possible. \nWater: always present,",
     "locatedAtTrailMetre": 251900,
     "camping": true
   },
@@ -571,7 +571,7 @@
   {
     "position": "255.1km, 1799m",
     "location": "Col de Tortes",
-    "descriptionFR": "Entre Tortes et Saucède, il y a 'le coup de la bassine' soit vous resterez sur le gr10 et plongerez vers un bas-fond immense avant de remonter de l'autre coté! soit vous longerez la route qui relie les deux points en suivant les courbes de niveau! tentant mais NON! car vous ètes de vrais grd'ists qui ne trîchent jamais ;)",
+    "descriptionFR": "Entre Tortes et Saucède, Il y a 'le coup de la bassine' soit vous resterez sur le gr10 et plongerez vers un bas-fond immense avant de remonter de l'autre coté! soit vous longerez la route qui relie les deux points en suivant les courbes de niveau! tentant mais NON! car vous ètes de vrais grd'ists qui ne trîchent jamais ;)",
     "descriptionEN": "Between Tortes and Saucède, there is 'THE SHOT OF THE BASIN' or you will stay on the gr10 and plunge to a huge bottom before going back on the other side! either you will follow the road that connects the two points following the contours! tempting but NO! because you are real grdists who never cheat;)"
   },
   {
@@ -583,7 +583,7 @@
   {
     "position": "261.6km, 1360m",
     "location": "bivouac de la Cascade du ruisseau de Bernet ",
-    "descriptionFR": "Zone de paturage herbeuse exposée située au pied de la cascade au bord du cours d'eau à moins de 100m du gr qui passe légèrement au nord, terrain relativement plat se trouvant à plus de 1km700 du Col de Saucède, pas de feu.Eau : très fréquente, Feu : non et/ou interdit, Risque météo : fort car zone exposée (orage et/ou froid en altitude) \"...Un vallon, des prairies, un ruisseau avec une cascade en arrière-plan, c’est décidé, je bivouaque ici. Tout s’enchaîne rapidement, la montée de la tente, un brin de toilettte... lien \" ",
+    "descriptionFR": "Zone de paturage herbeuse exposée située au pied de la cascade au bord du cours d'eau à moins de 100m du gr qui passe légèrement au nord, terrain relativement plat se trouvant à plus de 1km700 du Col de Saucède, pas de feu. \nEau: très fréquente ...Un vallon, des prairies, un ruisseau avec une cascade en arrière-plan, c’est décidé, je bivouaque ici. Tout s’enchaîne rapidement, la montée de la tente, un brin de toilettte",
     "descriptionEN": "Exposed grassy pasture area located at the foot of the waterfall at the edge of the stream less than 100m from the gr which passes slightly to the north, relatively flat ground located at more than 1km700 of the Col de Saucède",
     "locatedAtTrailMetre": 261600,
     "camping": true
@@ -597,7 +597,7 @@
   {
     "position": "266.1km, 878m",
     "location": "bivouac au camping Mialanne",
-    "descriptionFR": "Jean-Louis et Patricia vous accueilleront dans une ambiance familiale et chaleureuse. Ce petit camping. Outre tout le confort attendu pour un camping 3 étoiles, vous y trouverez une machine à laver et sécher le linge. Eau : toujours présente, Feu : non, Risque météo : faible (bivouac à coté d'un abri et/ou zone à couvert)site du campingmail : mialanne@orange.fr \"...camping \"aire naturelle de Mialanne\" (tél: 05 62 37 96 08) à la sortie du village en face de la supérette \"Proxi\" 6,70€ avec douche chauche, table pour picnic et salle de lecture qui permet de s'abriter en cas de pluie, très bon accueil. Dans le village divers commerces, pharmacie, boulangerie, boucherie, alimentation... lien  ",
+    "descriptionFR": "Jean-Louis et Patricia vous accueilleront dans une ambiance familiale et chaleureuse. Ce petit camping. Outre tout le confort attendu pour un camping 3 étoiles, vous y trouverez une machine à laver et sécher le linge. \nEau : toujours présente",
     "descriptionEN": "This small campsite. In addition to all the comforts expected for a 3 star campsite, you will find a washing machine and dryer. ",
     "locatedAtTrailMetre": 266100,
     "camping": true
@@ -631,345 +631,345 @@
   {
     "position": "276km, 1161m",
     "location": "bivouac du Camping intercommunal du lac d'Estaing",
-    "descriptionFR": "Le camping se trouve en amont du lac, bon! il y a du monde mais aussi des douches chaudes, ouvert de début juin à fin septembreEau : toujours présente, Feu : oui en zone autorisée, Risque météo : moyen car zone faiblement exposée (orage et/ou froid en altitude)(site du camping) \"...nous arrivons au lac d’Estaing, il fait toujours très chaud, nous n’en pouvons plus. Au programme, bière, camping, ravitaillement en barre énergétique, boisson et comme d’habitude coucher à … 21 heure!... lien \" ",
+    "descriptionFR": "Le camping se trouve en amont du lac, bon! il y a du monde mais aussi des douches chaudes, ouvert de début juin à fin septembre\nEau : toujours présente",
     "descriptionEN": "",
     "locatedAtTrailMetre": 276000,
     "camping": true
   },
   {
     "position": "279.9km, 2242m",
-    "location": "",
-    "descriptionFR": "",
+    "location": "Col d'Ilhéou",
+    "descriptionFR": "Attention aux névés de printemps, prudence. A partir de ce point et jusqu'à Gavarnie vous entrez dans le parc National des Pyrénées. Veuillez respecter la législation en vigueur voir carte des parcs traversés par le gr10",
     "descriptionEN": ""
   },
   {
     "position": "282.4km, 2242m",
     "location": "bivouac à coté du refuge d'étape du lac d'Ilhéou",
-    "descriptionFR": "règles bivouac Parc NaturelEau du lac, peu de terrain plat, le refuge est juste à coté du lac, attention pas de feu et règlementation du PNEau : toujours présente, Feu : non et/ou interdit, Risque météo : Danger! zone très exposée (orage et/ou froid en altitude) \"...Il faut longer le lac pour trouver un lieu propice de bivouac car, situé dans une cuvette glaciaire, il présente peu de terrains plats. On est ici dans le parc naturel des Pyrénées, aussi la règlementation est stricte : pas de bivouac avant 19h00... lien \" \"...L’aire de bivouac se trouve à 10 min, de l’autre côté du lac (que je ne vois pas à cause de la brume !) ppfff … Allez, je remets le sac sur le dos et c’est reparti ! J’arrive sur une zone herbeuse plutôt vallonnée il s’agit bien de la zone de bivouac. Je trouve un espace à peu près plat puis plantage de tente,... lien \"Jean Tanguy  \"...en allant vers le fond du lac, on s'éloigne bien sûr du refuge, mais on est au calme et on peut poser sa tente avant l'heure légale. Je n'ai pas le souvenir qu'il soit possible d'y faire du feu...",
+    "descriptionFR": "règles bivouac Parc Naturel. Eau du lac, peu de terrain plat, le refuge est juste à coté du lac, attention pas de feu et règlementation du PN \nEau : toujours présente",
     "descriptionEN": "",
     "locatedAtTrailMetre": 282400,
     "camping": true
   },
   {
     "position": "290km, 960m",
-    "location": "",
-    "descriptionFR": "",
+    "location": "Cauterets",
+    "descriptionFR": "gîtes d'étape, ravitaillement, distributeur d'argent, liaison bus vers la gare SNCF de Lourdes, Thermes de Cauterets, pharmacie\nVariante du gr10 par le col de Riou reliant Cauterets à Luz-St-Sauveur en une journée de marche au lieu de 3 par le gr10 original! A ne privilégier que par très mauvais temps car le passage par la Hourquette d'Ossoue vaut le voyage!",
     "descriptionEN": ""
   },
   {
     "position": "290.5km, 960m",
     "location": "bivouac aux campings de Cauterets ",
-    "descriptionFR": "Il y a 13 campings à Cauterets plus ou moins éloignés du gr10 (entre 0.5 et 3kms) et du centre ville. nous vous laissons faire votre propre prospection et n'orientons pas votre choix, ravitaillement possible dans le bourg de la ville, possibilité de retirer des sous aux distributeurs automatiquesEau : toujours présente, Feu : non et/ou interdit, Risque météo : faible (bivouac à coté d'un abri et/ou zone à couvert) ",
+    "descriptionFR": "Il y a 13 campings à Cauterets plus ou moins éloignés du gr10 (entre 0.5 et 3kms) et du centre ville. nous vous laissons faire votre propre prospection et n'orientons pas votre choix, ravitaillement possible dans le bourg de la ville, possibilité de retirer des sous aux distributeurs automatiques\nEau : toujours présente",
     "descriptionEN": "",
     "locatedAtTrailMetre": 290500,
     "camping": true
   },
   {
     "position": "297.6km, 1496m",
-    "location": "",
-    "descriptionFR": "",
+    "location": "Hôtel du Pont d'Espagne",
+    "descriptionFR": "hôtel bar",
     "descriptionEN": ""
   },
   {
     "position": "300km, 1731m",
-    "location": "bivouac au lac de Gaube non loin de la cabane du Pinet ",
-    "descriptionFR": "règles bivouac Parc Naturelbivouac idéal dans la partie amont du lac, de vastes zones de bivouac vous y attendent, pas de feu pour cause de PN.Eau : toujours présente, Feu : non et/ou interdit, Risque météo : fort car zone exposée (orage et/ou froid en altitude) \"...Comme prévu, sur la rive sud du lac de Gaube, nous trouvons un lieu de bivouac paradisiaque. Etant en plein parc naturel hors de question d’y faire du feu. La nuit sera étonnamment douce et calme... lien \" ",
+    "location": "Bivouac au lac de Gaube non loin de la cabane du Pinet ",
+    "descriptionFR": "règles bivouac Parc Naturel. bivouac idéal dans la partie amont du lac, de vastes zones de bivouac vous y attendent, pas de feu pour cause de PN.\nEau : toujours présente",
     "descriptionEN": "",
     "locatedAtTrailMetre": 300000,
     "camping": true
   },
   {
     "position": "305.2km, 2150m",
-    "location": "bivouac à coté du refuge des Oulettes de Gaube ",
-    "descriptionFR": "règles bivouac Parc NaturelUne immense zone de bivouac vous attend au pied du Vignemal, pas de feu pour cause de PN, zone herbeuse et humideEau : toujours présente, Feu : non et/ou interdit, Risque météo : fort car zone exposée (orage et/ou froid en altitude) \"...bivouac Oulettes de Gaube devant le grand Vignemale 3298m... lien \" \"...Possibilités de bivouacs sympas et tranquilles (à l'exception du bruit du gave) sur deux replats avant le refuge. Une dernière partie raide juste après. Arrivée au refuge des Oulettes de Gaube vers 18h00. Installation à l'aire de bivouac (très fréquentée) un peu à l'écart du refuge, seul espace de bivouac autorisé aux abords du refuge. Vue imprenable sur le Vignemale... lien \"\"...A noter la présence d'une zone officielle de bivouac sur le plat au S du refuge (panneau indiquant la règlementation du parc, tente de 19h à 9h)... lien \"\"...Au refuge, nous effectuons le plein d'eau (non potable) avant de planter la tente dans la zone de bivouac spacieuse et bien aménagée au pied du Vignemale (NB: la zone de bivouac est grande, penser à explorer toute la zone qui remonte loin vers le Vignemale)... lien ",
+    "location": "Bivouac à coté du refuge des Oulettes de Gaube ",
+    "descriptionFR": "règles bivouac Parc NaturelUne immense zone de bivouac vous attend au pied du Vignemal, pas de feu pour cause de PN, zone herbeuse et humide. \nEau: toujours présente. ",
     "descriptionEN": "",
     "locatedAtTrailMetre": 305200,
     "camping": true
   },
   {
     "position": "308.6km, 2734m",
-    "location": "",
-    "descriptionFR": "",
+    "location": "Hourquette d'Ossoue",
+    "descriptionFR": "passage le plus élevé du gr10 au pied du mythique Vignemal",
     "descriptionEN": ""
   },
   {
     "position": "309.4km, 2651m",
-    "location": "bivouac à coté du refuge de Baysselance ",
-    "descriptionFR": "règles bivouac Parc NaturelZone pierreuse d'altitude, très exposée et froide, refuge à proximité, nombreux cours d'eau, pas de feu pour cause de PN, un des plus hauts bivouacs possible sur le gr10Eau : fort risque d'absence, Feu : non et/ou interdit, Risque météo : Danger! zone très exposée (orage et/ou froid en altitude)  \"...Saturday 30 June, 2001. Our little tent between the snow and rocks at Refuge Bayssellance. The refuge was closed for repairs and everyone was camping...\" Barry Brian  \"..ils ont l'habitude de bivouaquer dans un endroit très calme à une dizaine de minutes après le refuge de Bayssellance...En passant devant le refuge vers 17h il y avait beaucoup de monde, c'est un endroit très fréquenté car il sert de point de départ pour le massif du Vignemale. Il y a quelques zones de bivouac aménagées autour de refuge mais elles sont soit occupées soit inclinées ou caillouteuses, ce qui n'est pas très pratique pour planter la tente. Des panneaux indiquent \"Défense de bivouaquer à moins de 30 m du refuge\" ou alors \" bivouac autorisé de 19h a 9h\". Finalement je ne regrette pas la proposition des 2 jeunes et je comprends pourquoi ils ont leur petit coin favori... lien \" ",
+    "location": "Bivouac à coté du refuge de Baysselance ",
+    "descriptionFR": "règles bivouac Parc Naturel. Zone pierreuse d'altitude, très exposée et froide, refuge à proximité, nombreux cours d'eau, pas de feu pour cause de PN, un des plus hauts bivouacs possible sur le gr10. \nEau : fort risque d'absence",
     "descriptionEN": "",
     "locatedAtTrailMetre": 309400,
     "camping": true
   },
   {
     "position": "315.1km, 1834m",
-    "location": "bivouac au barrage d'Ossoue à coté de la cabane d'Ossoue",
-    "descriptionFR": "piste carrossable vers gavarnie. Zone herbeuse et humide au niveau du lac de barrage, pas d'arbre donc pas d'ombre, attention par temps d'orage car la zone est exposée, une petite cabane à proximité, pas de feu car PNEau : toujours présente",
+    "location": "Bivouac au barrage d'Ossoue à coté de la cabane d'Ossoue",
+    "descriptionFR": "piste carrossable vers gavarnie. Zone herbeuse et humide au niveau du lac de barrage, pas d'arbre donc pas d'ombre, attention par temps d'orage car la zone est exposée, une petite cabane à proximité, pas de feu car PN. \nEau: toujours présente",
     "descriptionEN": "",
     "locatedAtTrailMetre": 315100,
     "camping": true,
     "point": {
-      "lat": 42.75728555428144,
-      "lng": -0.09385383865355834
+      "lat": 42.757285554,
+      "lng": -0.093853838
     }
   },
   {
     "position": "324.7km, 1500m",
-    "location": "",
-    "descriptionFR": "",
+    "location": "Gavarnie",
+    "descriptionFR": "ravitaillement. liaison bus direction gare SNCF de Pierrefitte via Luz-Saint-Sauveur",
     "descriptionEN": ""
   },
   {
     "position": "325.6km, 1436m",
     "location": "bivouac au pont de st Savin",
-    "descriptionFR": "Situé 900m aprés le gite des granges de holle à coté d'un pont en fond de vallée, lieu idéal pour bivouaquer au calme, zone semi-forestière, cours d'eau à proximitéEau : très fréquente, Feu : possible, Risque météo : faible (bivouac à coté d'un abri et/ou zone à couvert)",
+    "descriptionFR": "Situé 900m aprés le gite des granges de holle à coté d'un pont en fond de vallée, lieu idéal pour bivouaquer au calme, zone semi-forestière, cours d'eau à proximité. \nEau:très fréquente",
     "descriptionEN": "",
     "locatedAtTrailMetre": 325600,
     "camping": true,
     "point": {
-      "lat": 42.744357021271995,
-      "lng": -0.027622814941423712
+      "lat": 42.744357021,
+      "lng": -0.027622814
     }
   },
   {
     "position": "329.8km, 1610m",
-    "location": "",
-    "descriptionFR": "",
+    "location": "Saugué",
+    "descriptionFR": "gîte d'étape",
     "descriptionEN": ""
   },
   {
     "position": "330.98km, 1600m",
-    "location": "bivouac du gave d'Aspé ",
-    "descriptionFR": "Zone herbeuse humide située entre deux reliefs où coule le gave d'Aspé, ce lieu de bivouac est situé à moins de 20 min de marche en venant du Gîte de Saugué)Eau : très fréquente, Feu : non et/ou interdit, Risque météo : fort car zone exposée (orage et/ou froid en altitude) ",
+    "location": "Bivouac du gave d'Aspé ",
+    "descriptionFR": "Zone herbeuse humide située entre deux reliefs où coule le gave d'Aspé, ce lieu de bivouac est situé à moins de 20 min de marche en venant du Gîte de Saugué)\nEau: très fréquente",
     "descriptionEN": "",
     "locatedAtTrailMetre": 330980,
     "camping": true
   },
   {
     "position": "341.8km, 912m",
-    "location": "",
-    "descriptionFR": "",
+    "location": "Centrale hydroélectrique de Pragnères",
+    "descriptionFR": "Situé sur l'axe Luz-St-Sauveur - Gavarnie",
     "descriptionEN": ""
   },
   {
     "position": "352.2km, 720m",
-    "location": "",
-    "descriptionFR": "",
+    "location": "Luz St Sauveur",
+    "descriptionFR": "ravitaillement, distributeur d'argent,pharamacie\n8kms de route vers Barèges Variante du gr10 par le col de Riou reliant Cauterets à Luz-st-Sauveur en une journée de marche au lieu de 3 par le gr10 original! A ne privilégier que par très mauvais temps car le passage par la Hourquette d'Ossoue vaut le voyage! liaison bus direction gare SNCF de Pierrefitte",
     "descriptionEN": ""
   },
   {
     "position": "352.2km, 720m",
     "location": "bivouac aux campings de Luz St Sauveur",
-    "descriptionFR": "Il y a 4 campings à Luz St Sauveur. Ravitaillement et toutes les commodités de la ville de Luz à votre disposition.Eau : toujours présente, Feu : non et/ou interdit, Risque météo : faible (bivouac à coté d'un abri et/ou zone à couvert)",
+    "descriptionFR": "Il y a 4 campings à Luz St Sauveur. Ravitaillement et toutes les commodités de la ville de Luz à votre disposition. \nEau: toujours présente",
     "descriptionEN": ""
   },
   {
     "position": " ",
     "location": "bivouac du gîte d'étape \"Eth Cluquet\" (St Justin)",
-    "descriptionFR": "Face à la vallée, nous avons aménagé trois terrasses, où vous pourrez planter vos tentes, avec vue imprenable sur le massif de l'Ardiden et le Pays Toy. Les tables de pique-nique sont à votre disposition. Sur réservation, repas possibles à la Crêperie. Vous disposez de sanitaires et d'un point d'eau vaisselle. L'eau étant de l'eau de source non contrôlée, nous encourageons les plus réticents à s'équiper de pastilles.Eau : toujours présente, Feu : non et/ou interdit, Risque météo : faible (bivouac à coté d'un abri et/ou zone à couvert) (site du camping) ",
+    "descriptionFR": "Face à la vallée, nous avons aménagé trois terrasses, où vous pourrez planter vos tentes, avec vue imprenable sur le massif de l'Ardiden et le Pays Toy. Les tables de pique-nique sont à votre disposition. Sur réservation, repas possibles à la Crêperie. Vous disposez de sanitaires et d'un point d'eau vaisselle. L'eau étant de l'eau de source non contrôlée, nous encourageons les plus réticents à s'équiper de pastilles.\nEau: toujours présente",
     "descriptionEN": ""
   },
   {
     "position": "363m, 1240m",
     "location": "bivouac au camping La Ribère (Barèges)",
-    "descriptionFR": "Le camping est situé à 400m du village de Barèges. Il dispose d'une zone réservée au bivouac gr'diste.Eau : toujours présente, Feu : non et/ou interdit, Risque météo : faible (bivouac à coté d'un abri et/ou zone à couvert) (site du camping)",
+    "descriptionFR": "Le camping est situé à 400m du village de Barèges. Il dispose d'une zone réservée au bivouac gr'diste.\nEau: toujours présente",
     "descriptionEN": ""
   },
   {
     "position": "363.9km, 1240m",
-    "location": "",
-    "descriptionFR": "",
+    "location": "Barèges",
+    "descriptionFR": "gîtes d'étape, distributeur d'argent, pharmacie, ravitaillement, 8kms de route vers Luz-St-Sauveur, Liaison bus vers gare SNCF de Pierrefitte",
     "descriptionEN": ""
   },
   {
     "position": "366.7m, 1420m",
-    "location": "bivouac de Tournaboup ",
-    "descriptionFR": "De larges bandes herbeuses situées dans le lit du gave, il ne reste plus qu'à trouver son petit coin tranquille à l'écart de la route très fréquentée montant vers le col du Tourmalet, ce bivouac est en fait situé à coté du parking de la station de Barrèges, il ne représente qu'une solution de secoursEau : très fréquente, Feu : possible, Risque météo : fort car zone exposée (orage et/ou froid en altitude) ",
+    "location": "Bivouac de Tournaboup ",
+    "descriptionFR": "De larges bandes herbeuses situées dans le lit du gave, il ne reste plus qu'à trouver son petit coin tranquille à l'écart de la route très fréquentée montant vers le col du Tourmalet, ce bivouac est en fait situé à coté du parking de la station de Barrèges, il ne représente qu'une solution de secours\nEau: très fréquente",
     "descriptionEN": ""
   },
   {
     "position": "371.8km, 1990m",
     "location": "bivouac du Ruisseau d'Aygue Cluses à coté de l'abri de la Pègue",
-    "descriptionFR": "Zone de bivouac à côté du ruisseau dans une zone de replat où le ruisseau présente un immense méandre, zone herbeuse et humide, peut être trop humide à voir sinon poursuivre vers l'abri de la Pègue ou d'Aygue Cluses ou pour ceux venant de l'est, vers le parking de Tournaboup!Eau : très fréquente, Feu : possible, Risque météo : fort car zone exposée (orage et/ou froid en altitude)\"...les multiples méandres du ruisseau d'Aygues-cluses qui forment des entrelacs magifiques où paissent stoïquement les brebis..J'aperçois même quelques petites plages d'un beau sable fin qui donnent envie de s'y attarder...le paysage est vraiment enchanteur, le temps est magnifique, c'est le cadre idéal pour un bivouac.J'ai dans l'idée de m'arrêter à la cabane de la Pegue ou à celle d'Aygues-cluses... lien \" ",
+    "descriptionFR": "Zone de bivouac à côté du ruisseau dans une zone de replat où le ruisseau présente un immense méandre, zone herbeuse et humide, peut être trop humide à voir sinon poursuivre vers l'abri de la Pègue ou d'Aygue Cluses ou pour ceux venant de l'est, vers le parking de Tournaboup! \nEau: très fréquente",
     "descriptionEN": ""
   },
   {
     "position": "373.7km, 2150m",
     "location": "bivouac de la cabane d'Aygue Cluses ",
-    "descriptionFR": "4 à 6 places dans la cabaneZone de bivouac très large avec lac, zone exposée mais cabane disponible en cas de gros temps, zone herbeuse et rochersEau : toujours présente, Feu : non et/ou interdit, Risque météo : fort car zone exposée (orage et/ou froid en altitude) \"...Rapide coup d’œil sur la cabane d’Aygues-Cluses, elle est sombre, avec des matelas en mousse crasseux… Je préfère dormir sous tente. Au bord du lac, je retire mes chaussures et m’affale. La délivrance, enfin !... lien \"\"...On peut loger à la Cabane d'Aygues Cluses ouverte (4 à 6 personnes).Le bivouac est possible autour... lien \" ",
+    "descriptionFR": "4 à 6 places dans la cabane. Zone de bivouac très large avec lac, zone exposée mais cabane disponible en cas de gros temps, zone herbeuse et rochers.\nEau: toujours présente",
     "descriptionEN": ""
   },
   {
     "position": "376.1km, 2509m",
     "location": "bivouac du lac de Madaméte ",
-    "descriptionFR": "Zone herbeuse et humide autour du lac, attention zone très exposée)Eau : toujours présente, Feu : non et/ou interdit, Risque météo : Danger! zone très exposée (orage et/ou froid en altitude)(photo) gr10.fr\"...bivouac au lac de Madamète... lien \"\"...Possibilité de bivouac aux alentours ainsi qu'autour du Lac de Madaméte après avoir franchi le Col de Tracens... lien \"\"...bivouac à la cabane d'Aygues Cluses ou un peu plus haut vers les Lacs de Madamète... lien \" Zone herbeuse et humide autour du lac, attention zone très exposée)Eau : toujours présente, Feu : non et/ou interdit, Risque météo : Danger! zone très exposée (orage et/ou froid en altitude)(photo) gr10.fr\"...bivouac au lac de Madamète... lien \"\"...Possibilité de bivouac aux alentours ainsi qu'autour du Lac de Madaméte après avoir franchi le Col de Tracens... lien \"\"...bivouac à la cabane d'Aygues Cluses ou un peu plus haut vers les Lacs de Madamète... lien \" ",
+    "descriptionFR": "Zone herbeuse et humide autour du lac, attention zone très exposée.\nEau: toujours présente",
     "descriptionEN": ""
   },
   {
     "position": "376.1km, 2509m",
-    "location": "",
-    "descriptionFR": "",
+    "location": "Col de Madaméte",
+    "descriptionFR": "début du Parc Naturel du Néouvielle voir carte des parcs naturels traversés par le gr10. attention aux névés de printemps",
     "descriptionEN": ""
   },
   {
     "position": "378km, 2193m",
     "location": "bivouac du lac d'Aumar ",
-    "descriptionFR": "régles de bivouac Parc NaturelLa zone de bivouac autorisée se trouve au niveau de l'abri d'hiver et du parking de la navette le tout entre la lac d'Aumar et le lac d'Aubert, être le plus discret possible, monter la tente après 19h00 et partir avant 7h00, pas de feu!Eau : toujours présente, Feu : non et/ou interdit, Risque météo : Danger! zone très exposée (orage et/ou froid en altitude)\"...Nous posons finalement nos sacs au nord du lac d’Aumar vers 19h00 dans une zone non autorisée. Nous n’en pouvons plus ! Il nous tarde de nous rafraîchir, de monter la tente et de nous restaurer. Hors de question de faire un feu de camp ici, nous nous trouvons au cœur du parc naturel... lien \"\"...nous quittons le GR pour prendre le raccourci sous le barrage du lac d’Aubert (2150 m). On traverse l’aire de bivouac. Quelques tentes y sont plantées, mais on ne voit personne... lien \" régles de bivouac Parc NaturelLa zone de bivouac autorisée se trouve au niveau de l'abri d'hiver et du parking de la navette le tout entre la lac d'Aumar et le lac d'Aubert, être le plus discret possible, monter la tente après 19h00 et partir avant 7h00, pas de feu!Eau : toujours présente, Feu : non et/ou interdit, Risque météo : Danger! zone très exposée (orage et/ou froid en altitude)",
+    "descriptionFR": "régles de bivouac Parc NaturelLa zone de bivouac autorisée se trouve au niveau de l'abri d'hiver et du parking de la navette le tout entre la lac d'Aumar et le lac d'Aubert, être le plus discret possible, monter la tente après 19h00 et partir avant 7h00, pas de feu!Eau : toujours présente, Feu : non et/ou interdit, Risque météo : Danger! zone très exposée (orage et/ou froid en altitude)\"...Nous posons finalement nos sacs au nord du lac d’Aumar vers 19h00 dans une zone non autorisée. Nous n’en pouvons plus ! Il nous tarde de nous rafraîchir, de monter la tente et de nous restaurer. Hors de question de faire un feu de camp ici, nous nous trouvons au cœur du parc naturel... lien \"\"...nous quittons le GR pour prendre le raccourci sous le barrage du lac d’Aubert (2150 m). On traverse l’aire de bivouac. Quelques tentes y sont plantées, mais on ne voit personne... lien \" régles de bivouac Parc NaturelLa zone de bivouac autorisée se trouve au niveau de l'abri d'hiver et du parking de la navette le tout entre la lac d'Aumar et le lac d'Aubert, être le plus discret possible, monter la tente après 19h00 et partir avant 7h00, pas de feu!\nEau: toujours présente",
     "descriptionEN": ""
   },
   {
     "position": "382.2km, 2260m",
     "location": "bivouac du Col d'Estoudou ",
-    "descriptionFR": "règles bivouac Parc NaturelUne idée de bivouac séduisante si vous n'avez pas peur de manquer d'eau. Attention zone dangeureuse par temps d'orage. La vue y est superbe! (photo)Eau : absente, peut être deux sources de part et d'autre du col (100m), Feu : oui à condition de trouver du bois, Risque météo : très fort car zone très exposée (orage et/ou froid en altitude) \"...je m'installe au col d'Estoudou (2260 m) car la pluie a bien recommencé. Pour la vue, je verrai demain... lien ",
+    "descriptionFR": "règles bivouac Parc NaturelUne idée de bivouac séduisante si vous n'avez pas peur de manquer d'eau. Attention zone dangeureuse par temps d'orage. La vue y est superbe!\nEau : absente, peut être deux sources de part et d'autre du col (100m)",
     "descriptionEN": ""
   },
   {
     "position": "383.7km, 1821m",
     "location": "bivouac au lac de l'Oule à coté de l'abri de l'Oule ",
-    "descriptionFR": "fin du Parc Naturel du Néouvielle voir carte des parcs naturels traversés par le gr10Petit endroit de bivouac en amont du lac non loin d'un pont de pierre, terrain plat, attention pas de feu car nous sommes toujours en pleine réserve naturelle du NéouvielleEau : toujours présente, Feu : non et/ou interdit, Risque météo : fort car zone exposée (orage et/ou froid en altitude) ",
+    "descriptionFR": "Fin du Parc Naturel du Néouvielle voir carte des parcs naturels traversés par le gr10. Petit endroit de bivouac en amont du lac non loin d'un pont de pierre, terrain plat, attention pas de feu car nous sommes toujours en pleine réserve naturelle du Néouvielle\nEau : toujours présente",
     "descriptionEN": ""
   },
   {
     "position": "390.9km, 2215m",
-    "location": "",
+    "location": "Col de Portet",
     "descriptionFR": "",
     "descriptionEN": ""
   },
   {
     "position": "401.3km, 805m",
-    "location": "",
-    "descriptionFR": "",
+    "location": "Bourisp (St-Lary-Soulan)",
+    "descriptionFR": "pharmacie à St-Lary, camping de Bourisp, ravitaillement",
     "descriptionEN": ""
   },
   {
     "position": "401.3km, 805m",
     "location": "bivouac au camping La Mousquère de Bourisp",
-    "descriptionFR": "liaison bus vers gare SNCF de LannemezanCamping La mousquère, douche, ravitaillement au bourg à 1km du camping hors gr, camping ouvert toute l'annéeEau : toujours présente, Feu : non et/ou interdit, Risque météo : faible (bivouac à coté d'un abri et/ou zone à couvert)\"...nous installons notre tente et filons à la douche sans attendre. Au milieu du camping rempli essentiellement de mobiles-homes, nous nous faisons remarquer! \"- Et Maurice, Regarde les deux randonneurs là-bas! Comment font-ils pour transporter tout ce barda dans leurs sacs?... lien ",
+    "descriptionFR": "Liaison bus vers gare SNCF de LannemezanCamping La mousquère, douche, ravitaillement au bourg à 1km du camping hors gr, camping ouvert toute l'année.\nEau: toujours présente",
     "descriptionEN": ""
   },
   {
     "position": "403.8km, 1150m",
-    "location": "",
-    "descriptionFR": "",
+    "location": "Azet",
+    "descriptionFR": "gîte d'étape",
     "descriptionEN": ""
   },
   {
     "position": "407.5km, 1586m",
-    "location": "",
+    "location": "Couret de Latuhe",
     "descriptionFR": "",
     "descriptionEN": ""
   },
   {
     "position": "410.7km, 960m",
-    "location": "",
-    "descriptionFR": "",
+    "location": "Loudenvielle",
+    "descriptionFR": "hôtel, pharmacie,Camping,Centre Balnéo, ravitaillement.\nliaison bus vers arreau situé sur l'axe St-Lary / gare SNCF de Lannemezan! 24 kms de route pour ralier directement Bagnères de Luchon.",
     "descriptionEN": ""
   },
   {
     "position": "410.7km, 960m",
     "location": "bivouac au camping Pène Blanche de Loudenvielle",
-    "descriptionFR": "Camping Flower Pène Blanche à l'entrée du village sur le gr10 : moins de 10euros avec douches chaudes, supérette à 150m du camping, camping ouvert toute l'année. Plaque de cuisson en accès libre pour randonneurs.Eau : toujours présente, Feu : non et/ou interdit, Risque météo : faible (bivouac à coté d'un abri et/ou zone à couvert)(site du camping)\"...nous avons trouve un camping agréable, bien arbore, herbeux, les emplacements du bas sont un peu bruyants du fait de la route a proximité... les sanitaires étaient très propres , l'accueil sympa , un pot le dimanche matin est fait avec petit déjeuner gratuit ; la boulangère vient jusqu'au camping... lien ",
+    "descriptionFR": "Camping Flower Pène Blanche à l'entrée du village sur le gr10: moins de 10euros avec douches chaudes, supérette à 150m du camping, camping ouvert toute l'année. Plaque de cuisson en accès libre pour randonneurs.\nEau: toujours présente",
     "descriptionEN": ""
   },
   {
     "position": "412.6km, 1330m",
-    "location": "",
-    "descriptionFR": "",
+    "location": "Germ",
+    "descriptionFR": "Germ est un village agréable situé à 1300 mètres d'altitude.",
     "descriptionEN": ""
   },
   {
     "position": "417.4km, 1620m",
-    "location": "bivouac à coté de la cabane d'Ourtigat ",
-    "descriptionFR": "De l'espace en zone herbeuse et de l'eau, des terrains plats disponibles près du cours d'eauEau : très fréquente, Feu : non et/ou interdit, Risque météo : fort car zone exposée (orage et/ou froid en altitude)\"...J'arrive alors à la cabane d'Ourtiga, décrite dans le topo comme un lieu de bivouac agréable... lien \"\"...Située entre le village de Germ et le Couret d'Esquierry, la cabane d'Ourtiga offre un lieu de bivouac agréable avec comme panorama une série de pics dominés par le Pic de Hourgade (2964 m)...Attention toutefois si vous plantez la tente dans le coin, les troupeaux de vaches sont nombreux... lien \" De l'espace en zone herbeuse et de l'eau, des terrains plats disponibles près du cours d'eauEau : très fréquente, Feu : non et/ou interdit, Risque météo : fort car zone exposée (orage et/ou froid en altitude)",
+    "location": "bivouac à coté de la cabane d'Ourtigat",
+    "descriptionFR": "De l'espace en zone herbeuse et de l'eau, des terrains plats disponibles près du cours d'eauEau : très fréquente, Feu : non et/ou interdit, Risque météo : fort car zone exposée (orage et/ou froid en altitude)\"...J'arrive alors à la cabane d'Ourtiga, décrite dans le topo comme un lieu de bivouac agréable... lien \"\"...Située entre le village de Germ et le Couret d'Esquierry, la cabane d'Ourtiga offre un lieu de bivouac agréable avec comme panorama une série de pics dominés par le Pic de Hourgade (2964 m)...Attention toutefois si vous plantez la tente dans le coin, les troupeaux de vaches sont nombreux... lien \" De l'espace en zone herbeuse et de l'eau, des terrains plats disponibles près du cours d'eau. \nEau: très fréquente",
     "descriptionEN": ""
   },
   {
     "position": "419.1km, 2131m",
-    "location": "",
-    "descriptionFR": "",
+    "location": "Couret d'Esquierry",
+    "descriptionFR": "passage d'altitude exigeant en terme de pourcentage de pente en venant d'Azet (le plus pentu du gr10! ",
     "descriptionEN": ""
   },
   {
     "position": "423.6km, 1139m",
     "location": "bivouac à coté du gîte d'étape des granges d'Astau ",
-    "descriptionFR": "gîte d'étapeVastes étendues herbeuses au milieu du gave, lieu assez fréquenté mais en cherchant bien, on arrive à trouver un lieu isoléEau : toujours présente, Feu : possible, Risque météo : moyen car zone faiblement exposée (orage et/ou froid en altitude)\"...Loin du grand parking des granges, nous choisissons un beau terrain plat entre deux cours d’eau comme lieu de bivouac. Comme à notre habitude et toujours avec le même plaisir, nous y plantons la tente, préparons un beau feu de camp et filons nous rafraîchir dans le gave voisin... lien ",
+    "descriptionFR": "gîte d'étape Vastes étendues herbeuses au milieu du gave, lieu assez fréquenté mais en cherchant bien, on arrive à trouver un lieu isolé.\nEau : toujours présente",
     "descriptionEN": ""
   },
   {
     "position": "426.7km, 1504m",
-    "location": "",
-    "descriptionFR": "",
+    "location": "Lac d'Oô",
+    "descriptionFR": "gîte d'étape",
     "descriptionEN": ""
   },
   {
     "position": "428.8km, 1970m",
     "location": "bivouac du refuge du lac d'Espingo",
-    "descriptionFR": "Le refuge d'Espingo se trouve à 10min hors gr, de vastes zones herbeuses sont disponibles au bord du lac d'Espingo. Eau : toujours présente, Feu : non et/ou interdit, Risque météo : Danger! zone très exposée (orage et/ou froid en altitude). (photo)",
+    "descriptionFR": "Le refuge d'Espingo se trouve à 10min hors gr, de vastes zones herbeuses sont disponibles au bord du lac d'Espingo.\nEau : toujours présente",
     "descriptionEN": ""
   },
   {
     "position": "433.6km, 2272m",
-    "location": "",
-    "descriptionFR": "",
+    "location": "Col de la Coume de Bourg",
+    "descriptionFR": "Si vous avez le temps et si il n'y a pas trop de monde, faites donc le Pic de Céciret qui est à porté de mains après le col.",
     "descriptionEN": ""
   },
   {
     "position": "444.8km, 640m",
-    "location": "",
-    "descriptionFR": "",
+    "location": "Bagnères de Luchon",
+    "descriptionFR": "tout les choses",
     "descriptionEN": ""
   },
   {
     "position": "444.8km, 640m",
     "location": "bivouac aux campings de Bagnères de Luchon ",
-    "descriptionFR": "Plusieurs campings à votre disposition plus ou moins éloignés du centre ville, faire son choix avant de partir pour éviter de sillonner inutillement le bourg de long en largeEau : toujours présente, Feu : non et/ou interdit, Risque météo : faible (bivouac à coté d'un abri et/ou zone à couvert)",
+    "descriptionFR": "Plusieurs campings à votre disposition plus ou moins éloignés du centre ville, faire son choix avant de partir pour éviter de sillonner inutillement le bourg de long en large.\nEau : toujours présente",
     "descriptionEN": ""
   },
   {
     "position": "452.3km, 1230m",
-    "location": "",
-    "descriptionFR": "",
+    "location": "bivouac d'Artigue",
+    "descriptionFR": "A la sortie du village près d'un petit ruisseau.\nEau: très fréquente",
     "descriptionEN": ""
   },
   {
     "position": "452.5km, 1230m",
     "location": "bivouac d'Artigue",
-    "descriptionFR": "A la sortie du village près d'un petit ruisseauEau : très fréquente, Feu : possible, Risque météo : fort car zone exposée (orage et/ou froid en altitude) \"...Nous arrivons à Artigue, il fait chaud et lourd, à la sortie du village nous trouvons un petit coin tranquille où nous installons notre bivouac. A quelques mètres, un ruisseau bordé d'arbres, un endroit très frais qui nous permettra de souffler un peu en cette première journée... lien ",
+    "descriptionFR": "A la sortie du village près d'un petit ruisseau\nEau: très fréquente",
     "descriptionEN": ""
   },
   {
     "position": "455.8km, 1660m",
-    "location": "",
+    "location": "Cabane de Saunères",
     "descriptionFR": "",
     "descriptionEN": ""
   },
   {
     "position": "460.5km, 2193m",
-    "location": "",
+    "location": "Pic de Bacanère",
     "descriptionFR": "",
     "descriptionEN": ""
   },
   {
     "position": "463km, 1891m",
     "location": "bivouac de l'étang de St Béa",
-    "descriptionFR": "Attention pas forcément d'eau dans l'étang, zone ouverte danger, cabane à 1,5km plus basEau : fort risque d'absence, Feu : non et/ou interdit, Risque météo : fort car zone exposée (orage et/ou froid en altitude) (photo)\"...Dans la descente, je me serai bien arrêté au bord du petit lac de St Béat (que le Gr évite maintenant) mais je n’ai plus assez d’eau. Une source un peu plus loin et je pose le camp. Thé et casse croute habituels. Petite balade au lac de St Béat... lien ",
+    "descriptionFR": "Attention pas forcément d'eau dans l'étang, zone ouverte danger, cabane à 1,5km plus bas.\nEau: fort risque d'absence",
     "descriptionEN": ""
   },
   {
     "position": "464.6km, 1586m",
-    "location": "",
+    "location": "Cabane des Courraux",
     "descriptionFR": "",
     "descriptionEN": ""
   },
   {
     "position": "465.6km, 1350m",
-    "location": "",
+    "location": "Cabane d'Artigues",
     "descriptionFR": "",
     "descriptionEN": ""
   },
   {
     "position": "471.6km, 544m",
-    "location": "",
-    "descriptionFR": "",
+    "location": "Fos",
+    "descriptionFR": "ravitaillement à confirmer. pas de camping!! liaison bus vers gare SNCF de Saint Gaudens",
     "descriptionEN": ""
   }
 ]
