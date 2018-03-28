@@ -14,23 +14,22 @@ export class Gr10Map extends Component {
       showingInfoWindow: false,
       infoWindowContent: 'hello',
       trailNotes: [],
-      editMode: props.match.params.mode === 'edit'
+      editMode: props.match.params.mode === 'edit',
+      pathClickedLocation: {lat: undefined, lng: undefined},
+         mapClickedLocation: {lat: undefined, lng: undefined}
     };
 
+    this.handleOnMapClick = this.handleOnMapClick.bind(this);
     this.onMarkerClick = this.onMarkerClick.bind(this);
     this.onDragEnd = this.onDragEnd.bind(this);
   }
+
 
   handleMarkClick(a, marker, infoWindow) {
     return e => {
       const header = marker.getTitle();
       const description = marker.description;
-      //  <div>
-      //    {this.state.activeTrailNote.descriptionEN !== ''
-      //      ? this.state.activeTrailNote.descriptionEN
-      //      : this.state.activeTrailNote.descriptionFR}
-      //  </div>
-      //</div>
+
 
       infoWindow.open(marker.getMap(), marker);
       infoWindow.setContent(
@@ -38,6 +37,7 @@ export class Gr10Map extends Component {
       );
     };
   }
+
   handleMarkerDragend(marker) {
     return e => {
       const updatedTrailNote = {
@@ -50,6 +50,34 @@ export class Gr10Map extends Component {
 
       console.log(JSON.stringify(updatedTrailNote));
     };
+  }
+
+  handleRouteClickEvent(google, route, evtName) {
+      return e => {
+          const latlng = e.latLng;
+
+          const nearestMetre = MapHelper.findNearestTrailMetre(
+            google,
+            route,
+            latlng
+          );
+
+       //   console.log(`This is the ${(nearestMetre * 0.001).toFixed(2)}km of the trail`);
+         
+          const nearestPoint = MapHelper.findNearestPathPoint(
+             google,
+             route,
+             latlng
+           );
+
+          this.setState({pathClickedLocation: {lat: nearestPoint.lat(), lng: nearestPoint.lng(), pathMetre: nearestMetre}});
+      };
+  }
+
+  handleOnMapClick(mapProps, map, clickEvent) {
+
+      this.setState({mapClickedLocation: {lat: clickEvent.latLng.lat().toFixed(6), lng: clickEvent.latLng.lng().toFixed(6)}});
+
   }
 
   addCampingLocationsToMap = (map, google, route, trailNotes) => {
@@ -134,19 +162,7 @@ export class Gr10Map extends Component {
     });
   };
 
-  handleRouteClickEvent(google, route, evtName) {
-    return e => {
-      const latlng = e.latLng;
 
-      const nearestMetre = MapHelper.findNearestTrailMetre(
-        google,
-        route,
-        latlng
-      );
-
-      alert(`This is the ${(nearestMetre * 0.001).toFixed(2)}km of the trail`);
-    };
-  }
 
   onMapReady = (mapProps, map) => {
     this.map = map;
@@ -165,11 +181,16 @@ export class Gr10Map extends Component {
           strokeWeight: 4
         });
 
-        //TODO: This handleRouteClickEvent doesn't seem right.
-        this.route.addListener(
-          'click',
-          this.handleRouteClickEvent(this.google, this.route, 'click')
-        );
+          
+        if (this.props.match.params.mode === 'edit') {
+            //TODO: This handleRouteClickEvent doesn't seem right.
+
+            this.route.addListener(
+              'click',
+              this.handleRouteClickEvent(this.google, this.route, 'click')
+            );
+        }
+       
         this.route.setMap(map);
 
         if (this.trailNotes !== undefined) {
@@ -180,6 +201,9 @@ export class Gr10Map extends Component {
             this.trailNotes
           );
         }
+
+        
+
       });
 
     fetch('/data/bivouacs.json')
@@ -223,41 +247,11 @@ export class Gr10Map extends Component {
     console.log(JSON.stringify(updatedTrailNote));
   }
 
-  onClose(a, b, c) {
-    let ff = this.map;
-    alert('it closed');
-  }
 
-  onOpen(a, b, c) {
-    let ff = this.map;
-    alert('it onOpen');
-  }
 
   render() {
-    const markers = this.state.trailNotes.map(trailNote => {
-      let iconUrl = '/tent.png';
 
-      if (trailNote.camping && trailNote.locatedByTrailMile) {
-        iconUrl = '/red-tent.svg';
-      }
 
-      if (trailNote.gite) {
-        iconUrl = '/kennel.svg';
-      }
-
-      return (
-        <Marker
-          key={trailNote.position}
-          title={trailNote.location}
-          name={trailNote}
-          position={trailNote.point}
-          icon={{ url: iconUrl }}
-          onClick={this.onMarkerClick}
-          draggable={this.state.editMode}
-          onDragend={this.onDragEnd}
-        />
-      );
-    });
 
     return (
       <div className="row">
@@ -268,8 +262,13 @@ export class Gr10Map extends Component {
               zoom={8}
               onReady={this.onMapReady}
               initialCenter={{ lat: 42.742489, lng: 0.27881 }}
+  clickableIcons={true}
+  onClick={this.handleOnMapClick}
             />
           </div>
+
+   <p> The nearest point on the path is {this.state.pathClickedLocation.lat}, {this.state.pathClickedLocation.lng}  at {this.state.pathClickedLocation.pathMetre}</p>
+   <p> You clicked on {this.state.mapClickedLocation.lat}, {this.state.mapClickedLocation.lng}  </p>
         </div>
       </div>
     );
