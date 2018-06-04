@@ -1,6 +1,7 @@
 ﻿import React, { Component } from 'react';
 import { Map, InfoWindow, Marker, GoogleApiWrapper } from 'google-maps-react';
 import MapHelper from '../maps/mapHelper.jsx';
+import PropTypes from 'prop-types';
 
 export class Gr10Map extends Component {
   constructor(props) {
@@ -15,21 +16,32 @@ export class Gr10Map extends Component {
       infoWindowContent: 'hello',
       trailNotes: [],
       editMode: props.match.params.mode === 'edit',
-      pathClickedLocation: {lat: undefined, lng: undefined},
-         mapClickedLocation: {lat: undefined, lng: undefined}
+      pathClickedLocation: { lat: undefined, lng: undefined },
+      mapClickedLocation: { lat: undefined, lng: undefined },
+      name: '',
+      camping: false,
+      description: '',
+      hotelNames: '',
+      hotelTels: ''
     };
 
     this.handleOnMapClick = this.handleOnMapClick.bind(this);
     this.onMarkerClick = this.onMarkerClick.bind(this);
     this.onDragEnd = this.onDragEnd.bind(this);
-  }
 
+    this.onNameChange = this.onNameChange.bind(this);
+    this.onFacilityChange = this.onFacilityChange.bind(this);
+
+    this.onDescriptionChange = this.onDescriptionChange.bind(this);
+    this.onHotelNameChange = this.onHotelNameChange.bind(this);
+      this.onHotelTelChange = this.onHotelTelChange.bind(this);
+  
+  }
 
   handleMarkClick(a, marker, infoWindow) {
     return e => {
       const header = marker.getTitle();
       const description = marker.description;
-
 
       infoWindow.open(marker.getMap(), marker);
       infoWindow.setContent(
@@ -52,32 +64,36 @@ export class Gr10Map extends Component {
     };
   }
 
-  handleRouteClickEvent(google, route, evtName) {
-      return e => {
-          const latlng = e.latLng;
-
-          const nearestMetre = MapHelper.findNearestTrailMetre(
-            google,
-            route,
-            latlng
-          );
-
-       //   console.log(`This is the ${(nearestMetre * 0.001).toFixed(2)}km of the trail`);
-         
-          const nearestPoint = MapHelper.findNearestPathPoint(
-             google,
-             route,
-             latlng
-           );
-
-          this.setState({pathClickedLocation: {lat: nearestPoint.lat(), lng: nearestPoint.lng(), pathMetre: nearestMetre}});
-      };
-  }
-
   handleOnMapClick(mapProps, map, clickEvent) {
+    this.setState({
+      mapClickedLocation: {
+        lat: clickEvent.latLng.lat().toFixed(6),
+        lng: clickEvent.latLng.lng().toFixed(6)
+      }
+    });
 
-      this.setState({mapClickedLocation: {lat: clickEvent.latLng.lat().toFixed(6), lng: clickEvent.latLng.lng().toFixed(6)}});
+    const pathPointsWithDistance = MapHelper.addCumulativeDistance(
+      mapProps.google,
+      this.route.getPath().getArray()
+    );
 
+    const nearest = MapHelper.findNearest(
+      mapProps.google,
+      pathPointsWithDistance,
+      clickEvent.latLng,
+      this.map
+    );
+
+    let result = `Distance from map click ${nearest.minDistance.toFixed(0)}`;
+
+    this.setState({
+      pathClickedLocation: {
+        lat: nearest.latlng.lat().toFixed(6),
+        lng: nearest.latlng.lng().toFixed(6),
+        pathMetre: nearest.distance.toFixed(1),
+        info: result
+      }
+    });
   }
 
   addCampingLocationsToMap = (map, google, route, trailNotes) => {
@@ -130,6 +146,24 @@ export class Gr10Map extends Component {
       });
     }
 
+    const knownCamping = trailNotes
+      .filter(camp => camp.point !== undefined && camp.point !== undefined)
+      .map(x => {
+        return {
+          name: x.location,
+          description: {
+            en: x.descriptionEN,
+            fr: x.descriptionFR
+          },
+          camping: x.camping,
+          point: x.point
+        };
+      });
+
+    //   const knownCamping = trailNotes.filter(camp => camp.point !== undefined);
+
+  //  console.log(JSON.stringify(knownCamping));
+
     trailNotesToAddToMap.forEach(trailNote => {
       let iconUrl = '/tent.png';
 
@@ -162,8 +196,6 @@ export class Gr10Map extends Component {
     });
   };
 
-
-
   onMapReady = (mapProps, map) => {
     this.map = map;
     this.google = mapProps.google;
@@ -181,16 +213,6 @@ export class Gr10Map extends Component {
           strokeWeight: 4
         });
 
-          
-        if (this.props.match.params.mode === 'edit') {
-            //TODO: This handleRouteClickEvent doesn't seem right.
-
-            this.route.addListener(
-              'click',
-              this.handleRouteClickEvent(this.google, this.route, 'click')
-            );
-        }
-       
         this.route.setMap(map);
 
         if (this.trailNotes !== undefined) {
@@ -201,9 +223,6 @@ export class Gr10Map extends Component {
             this.trailNotes
           );
         }
-
-        
-
       });
 
     fetch('/data/bivouacs.json')
@@ -247,11 +266,66 @@ export class Gr10Map extends Component {
     console.log(JSON.stringify(updatedTrailNote));
   }
 
+  onNameChange(event) {
+    this.setState({ name: event.target.value });
+  }
+  onDescriptionChange(event) {
+    this.setState({ description: event.target.value });
+  }
 
+  onHotelNameChange(event) {
+    this.setState({ hotelNames: event.target.value });
+  }
+
+  onHotelTelChange(event) {
+    this.setState({ hotelTels: event.target.value });
+  }
+
+    onFacilityChange(event) {
+        const target = event.target;
+        const value = target.type === 'checkbox' ? target.checked : target.value;
+        const name = target.name;
+
+        this.setState({
+            [name]: value
+        });
+
+    }
 
   render() {
+    const name = `"name":"${this.state.name}"`;
 
+    const point = `"point": {"lat":${
+      this.state.mapClickedLocation.lat
+    }, "lng":${this.state.mapClickedLocation.lng}}`;
+    let description = '';
+    if (this.state.description.length > 0) {
+      description = `,"description": {"en":"${this.state.description}", "fr":"${
+        this.state.description
+      }"}`;
+    }
 
+    const hotelsList = this.state.hotelNames.split(',');
+    const hotelsTels = this.state.hotelTels.split(',');
+
+    const hotels = hotelsList.map((x, index) => {
+      const tel = hotelsTels.length > index ? hotelsTels[index] : '';
+      return `{"name": "${x.trim()}", "tel":"${tel.trim()}", "url":""}`;
+    });
+
+    let accommodations = '';
+    if (this.state.hotelNames.length === 1) {
+      accommodations = `,"accommodations": [${hotels[0]}]`;
+    } else if (this.state.hotelNames.length > 1) {
+      accommodations = `,"accommodations": [${hotels}]`;
+    }
+
+    const foodshop = this.state.foodshop ? `,"foodshop": true` : '';
+    const restaurant = this.state.restaurant ? `,"restaurant": true` : '';
+    const camping = this.state.camping ? `,"camping": true` : '';
+      const gite = this.state.gite ? `,"gite": true` : '';
+      const cabane = this.state.cabane ? `,"cabane": true` : '';
+      const hotel = this.state.hotel ? `,"hotel": true` : '';
 
     return (
       <div className="row">
@@ -259,16 +333,126 @@ export class Gr10Map extends Component {
           <div className="gr10map">
             <Map
               google={this.props.google}
-              zoom={8}
+              zoom={12}
               onReady={this.onMapReady}
-              initialCenter={{ lat: 42.742489, lng: 0.27881 }}
-  clickableIcons={true}
-  onClick={this.handleOnMapClick}
+                        initialCenter={{ lat: 42.560067, lng: 2.000928 }}
+              clickableIcons={true}
+              onClick={this.handleOnMapClick}
             />
           </div>
 
-   <p> The nearest point on the path is {this.state.pathClickedLocation.lat}, {this.state.pathClickedLocation.lng}  at {this.state.pathClickedLocation.pathMetre}</p>
-   <p> You clicked on {this.state.mapClickedLocation.lat}, {this.state.mapClickedLocation.lng}  </p>
+          <p>
+            {' '}
+            The nearest point on the path is{' '}
+            {this.state.pathClickedLocation.lat},{' '}
+            {this.state.pathClickedLocation.lng} at{' '}
+            {this.state.pathClickedLocation.pathMetre},
+            {this.state.pathClickedLocation.info}
+          </p>
+          <p>
+            name:{' '}
+            <input
+              type="text"
+              value={this.state.name}
+              onChange={this.onNameChange}
+                    />
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="hotel"
+                            defaultChecked={this.state.hotel}
+                            onChange={this.onFacilityChange}
+                        />
+                        Hotel
+            </label>
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="gite"
+                            defaultChecked={this.state.gite}
+                            onChange={this.onFacilityChange}
+                        />
+                        Gite
+            </label>
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="camping"
+                            checked={this.state.camping}
+                            onChange={this.onFacilityChange}
+                        />
+                        Camping
+            </label>
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="cabane"
+                            defaultChecked={this.state.cabane}
+                            onChange={this.onFacilityChange}
+                        />
+                        Cabane
+            </label>
+
+
+
+            <label>
+              <input
+                type="checkbox"
+                name="foodshop"
+                            checked={this.state.foodshop}
+                            onChange={this.onFacilityChange}
+              />
+              Foodshop
+            </label>{' '}
+            <label>
+              <input
+                type="checkbox"
+                name="restaurant"
+                defaultChecked={this.state.restaurant}
+                            onChange={this.onFacilityChange}
+              />
+              Restaurant
+            </label>
+
+
+                    
+            <br />
+            description:{' '}
+            <input
+                        type="text"
+                        style={{width:'80%'}}
+              value={this.state.description}
+              onChange={this.onDescriptionChange}
+            />
+            <br />
+            hotel name:(csv):
+            <input
+              type="text"
+              style={{ width: '80%' }}
+              value={this.state.hotelNames}
+              onChange={this.onHotelNameChange}
+            /><br/>
+            tel:{' '}
+            <input
+                        type="text"
+                        style={{ width: '80%' }}
+              value={this.state.hotelTels}
+              onChange={this.onHotelTelChange}
+            />
+            <br />
+            {'{'}
+            {name},
+            {point}
+            {description}
+                    {accommodations}
+                    {hotel}
+                    {gite}
+                    {camping}
+                    {cabane}
+            {foodshop}
+            {restaurant}
+            {'}'}
+          </p>
         </div>
       </div>
     );
@@ -278,5 +462,5 @@ export class Gr10Map extends Component {
 export default GoogleApiWrapper({
   apiKey: 'AIzaSyCbTwcCRBzA9Qc5dT_aPYebyiprFlV1WVE',
   libraries: ['geometry'],
-  v: 3.2
+  language: 'en'
 })(Gr10Map);

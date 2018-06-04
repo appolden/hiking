@@ -2,6 +2,7 @@
 const path = require('path');
 const serveStatic = require('serve-static');
 const https = require('https');
+const strava = require('strava-v3');
 
 const staticPath = path.join(__dirname, 'client/build');
 
@@ -10,47 +11,51 @@ const app = express();
 app.disable('x-powered-by');
 
 // Serve static files from the React app
-app.use(express.static(staticPath, {
-    setHeaders: setCustomCacheControl
-}));
+app.use(express.static(staticPath));
 
-// Put all API endpoints under '/api'
-app.get('/api/passwords', (req, res) => {
-    const greeting = { message: 'hello world!', secret: process.env.SECRET_CODE};
+app.get('/api/activities/gr10', (req, res) => {
+    const fromDate = 1528675200;// 11th june 2018
+    const toDate = 1538352000;// 1st Oct 2018;
 
-    //// Return them as json
-    res.json(greeting);
+    listAllActivitiesPages(fromDate, toDate, 1, [], res);
 });
 
-app.get('/api/strava', (req, res) => {
-    const fromDate = 1494716400;
-    const toDate = 1495321200;
-    const access_token = process.env.STRAVA_ACCESS_TOKEN;
-    const url = `https://www.strava.com/api/v3/athlete/activities?after=${fromDate}&before=${toDate}&page=1&per_page=30&access_token=${access_token}`;
-   
-    //todo: iterate through the pages of results
-    //todo: extract the required fields. There is no need to return everything.
+function listAllActivitiesPages(fromDate, toDate, pageNumber, activities, res) {
+    strava.athlete.listActivities(
+        {
+            'access_token': process.env.STRAVA_ACCESS_TOKEN,
+            'after': fromDate,
+            'before': toDate,
+            'page': pageNumber
+        }
+        , function (err, payload, limits) {
 
-    https.get(url, (resp) => {
-        let data = '';
+            if (payload.length === 0) {
 
-        // A chunk of data has been recieved.
-        resp.on('data', (chunk) => {
-            data += chunk;
+                const hikingActivities = activities.filter(x => x.type === 'Hike');
+                const activitiesToReturn = hikingActivities.map(x => {
+                    return {
+                        id: x.id,
+                        name: x.name,
+                        start_date_local: x.start_date_local,
+                        map: {
+                            summary_polyline: x.map.summary_polyline
+                        },
+                        elapsed_time: x.elapsed_time,
+                        moving_time: x.moving_time,
+                        distance: x.distance,
+                        total_elevation_gain: x.total_elevation_gain
+                    }
+                });
+
+                res.send(activitiesToReturn);
+            }
+            else {
+                activities = activities.concat(payload);
+                listAllActivitiesPages(fromDate, toDate, pageNumber + 1, activities, res);
+            }
         });
-
-        // The whole response has been received. Print out the result.
-        resp.on('end', () => {
-            res.send(data);
-        });
-
-    }).on("error", (err) => {
-        console.log("Error: " + err.message);
-        res.send(err);
-    });
-
-
-});
+}
 
 // The "catchall" handler: for any request that doesn't
 // match one above, send back React's index.html file.
@@ -62,18 +67,5 @@ app.get('*', (req, res) => {
 const port = process.env.PORT || 3000;
 app.listen(port);
 
-
 console.log(`listening on ${port}`);
 console.log(`static path on ${staticPath}`);
-
-function setCustomCacheControl(res, path, stat) {
-    if (serveStatic.mime.lookup(path) === 'application/javascript') {
-        // Custom Cache-Control for HTML files
-        res.setHeader('Cache-Control', 'public, max-age=86400')
-    }
-
-    if (serveStatic.mime.lookup(path) === 'text/css') {
-        // Custom Cache-Control for HTML files
-        res.setHeader('Cache-Control', 'public, max-age=86400')
-    }
-}

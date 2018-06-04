@@ -6,34 +6,39 @@ class EncodeGpx extends Component {
     super(props);
     this.state = { encodedPath: '' };
     this.gpxFiles = [
-      {
-        url: '/data/gr10/gpx/gr10-1-hendaye.gpx'
-      },
-      {
-        url: '/data/gr10/gpx/gr10-2-esterencuby.gpx'
-      },
-      {
-        url: '/data/gr10/gpx/gr10-3-borce.gpx'
-      },
-      {
-        url: '/data/gr10/gpx/gr10-4-cauterets.gpx'
-      },
-      {
-        url: '/data/gr10/gpx/gr10-5-lac-de-loule.gpx'
-      },
-      {
-        url: '/data/gr10/gpx/gr10-6-etang-daraing.gpx'
-      },
-      {
-        url: '/data/gr10/gpx/gr10-7-etang-de-guzet.gpx'
-      },
-      {
-        url: '/data/gr10/gpx/gr10-8-merens-les-vals.gpx'
-      },
-      {
-        url: '/data/gr10/gpx/gr10-9-batere.gpx'
-      }
+        {
+            url: '/data/gr10/gpx/gr10-1-hendaye.gpx'
+        },
+        {
+            url: '/data/gr10/gpx/gr10-2-esterencuby.gpx'
+        },
+        {
+            url: '/data/gr10/gpx/gr10-3-borce.gpx'
+        },
+        {
+            url: '/data/gr10/gpx/gr10-4-cauterets.gpx'
+        },
+        {
+            url: '/data/gr10/gpx/gr10-5-lac-de-loule.gpx'
+        },
+        {
+            url: '/data/gr10/gpx/gr10-6-etang-daraing.gpx'
+        },
+        {
+            url: '/data/gr10/gpx/gr10-7-etang-de-guzet.gpx'
+        },
+        {
+            url: '/data/gr10/gpx/gr10-8-merens-les-vals.gpx'
+        },
+        {
+            url: '/data/gr10/gpx/gr10-9-batere.gpx'
+        }
     ];
+
+    //this.gpxFiles = [
+    //  { url: '/data/gr20/gr20a.gpx' },
+    //  { url: '/data/gr20/gr20b.gpx' }
+    //];
   }
 
   shouldComponentUpdate(nextProps, nextState) {

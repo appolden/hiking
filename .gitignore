@@ -22,3 +22,6 @@ yarn-debug.log*
 yarn-error.log*
 
 config.js
+/.vs/VSWorkspaceState.json
+/.vs/slnx.sqlite
+/.vs/config/applicationhost.config

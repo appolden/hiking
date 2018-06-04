@@ -19,8 +19,8 @@
     "locatedAtTrailMetre": 9700,
     "camping": true,
     "point": {
-      "lat": 43.314712032827025,
-      "lng": -1.7265073518371992
+      "lat": 43.314712032,
+      "lng": -1.7265073518
     }
   },
   {
@@ -45,8 +45,8 @@
     "locatedAtTrailMetre": 24500,
     "camping": true,
     "point": {
-      "lat": 43.31672896357981,
-      "lng": -1.6310981851196402
+      "lat": 43.31672896,
+      "lng": -1.631098185
     }
   },
   {
@@ -222,8 +222,8 @@
     "descriptionFR": "Aux bordes d'inzarrazquy, de l'eau de ruisseau, feu possible, le lieu est situé dans la zone où le gr10 quitte une piste pour emprunter un sentier abrupte menant directement au Col d'Irau, impossible à rater. \nEau : présence fréquente",
     "descriptionEN": "At the edge of inzarrazquy, creek water, fire possible, the place is located in the area where the gr10 leaves a track to take a steep path leading directly to the Col d'Irau, impossible to miss. \nWater: frequent presence",
     "locatedAtTrailMetre": 117700,
-    "camping": true
-
+    "camping": true,
+      "point":{"lat":43.063927,"lng":-1.150051339}
   },
   {
     "position": "119.9km, 1008m",
@@ -263,7 +263,7 @@
   },
   {
     "position": "126.7km, 1000m",
-    "location": "bivouac sur l'aire de camping naturel de Iraty-Cize",
+    "location": "Bivouac sur l'aire de camping naturel de Iraty-Cize",
     "descriptionFR": "6.5kms de route cers le col d'IrauZone herbeuse située sur le gr10 en amont du barrage de Iraty-Cize, très fréquentée par les camping-cars, eau de ruisseau, feu possible, ouvert toute l'année. \nEau: toujours présente",
     "descriptionEN": "6.5km from the road to the IrauZone grassy pass located on the Gr10 upstream of the Iraty-Cize dam, very frequented by motorhomes, creek water, fire possible, open all year.",
     "locatedAtTrailMetre": 126700,
@@ -275,7 +275,7 @@
   },
   {
     "position": "129.1km, 1110m",
-    "location": "bivouac du lac d'Iraty barrage",
+    "location": "Bivouac du lac d'Iraty barrage",
     "descriptionFR": "3.7kms de route vers le Col de Bagargiak. En amont du barage dans la forêt hors gr10 le long du ruisseau, de nombreuses possibilités, zone forestière dense, eau du ruisseau. \nEau: toujours présente",
     "descriptionEN": "3.7kms drive to Bagargiak Pass. Before the dam in the forest off Gr10 along the creek, many possibilities, dense forest area, water creek. \nWater: always present",
     "locatedAtTrailMetre": 129100,
@@ -299,7 +299,7 @@
   },
   {
     "position": " 141.18km, 1030m ",
-    "location": " bivouac de Bagozabalaga ",
+    "location": " Bivouac de Bagozabalaga ",
     "descriptionFR": "Ce bivouac est situé sur la longue ligne de crête reliant Iraty à Logibar. Pas d'eau, zone exposée aux orages, pas d'autre solution à proximité sur cette portion du gr10. \nEau: absence",
     "descriptionEN": "This bivouac is located on the long ridge line connecting Iraty to Logibar. No water, area exposed to storms, no other solution nearby on this portion of gr10. \nWater: absence",
     "locatedAtTrailMetre": 141180,
@@ -318,16 +318,16 @@
     "descriptionEN": ""
   },
   {
-    "position": " 162.7km, 830m ",
-    "location": " bivouac des Granges Errékaltia ",
-    "descriptionFR": " 4km aprés le passage du col de Kurutché (sens ouest-est) après avoir quitté définitivement la piste menant au col, à coté d'une bergerie et d'un ruisseau, zone exposée. \nEau: fort risque d'absence",
+    "position": "162.7km, 830m ",
+    "location": "Bivouac des Granges Errékaltia ",
+    "descriptionFR": "4km aprés le passage du col de Kurutché (sens ouest-est) après avoir quitté définitivement la piste menant au col, à coté d'une bergerie et d'un ruisseau, zone exposée. \nEau: fort risque d'absence",
     "descriptionEN": "4km after crossing the Kurutché pass (east-west direction) after having definitively left the track leading to the pass, next to a sheepfold and a stream, exposed area. \nWater: high risk of absence",
     "locatedAtTrailMetre": 162700,
     "camping": true
   },
   {
-    "position": " 169.8km, 620m ",
-    "location": "bivouac du gîte d'étape Maison Elichalt (Sainte Engraçe)",
+    "position": "169.8km, 620m ",
+    "location": "Bivouac du gîte d'étape Maison Elichalt (Sainte Engraçe)",
     "descriptionFR": "gîte d'étape 12kms de route vers La-Pierre-St-Martin. Le gîte est en face de l'église, impossible à manquer. \nEau : toujours présente",
     "descriptionEN": "",
     "locatedAtTrailMetre": 169800,
@@ -341,7 +341,7 @@
     "descriptionEN": ""
   },
   {
-    "position": " 180.6km, 1700m ",
+    "position": "180.6km, 1700m ",
     "location": "Bivouac à coté du refuge Jeandel (La Pierre-St-Martin)",
     "descriptionFR": "Bivouac à coté du refuge Jeandel, eau, terrain plat, exposé, préférer le refuge!!, le refuge est ouvert toute l'année (sur réservation) excepté octobre et novembre. \nEau: toujours présente",
     "descriptionEN": "Bivouac next to the refuge Jeandel, water, flat ground, exposed, prefer refuge !!, the refuge is open all the year (on reservation) except October and November. \nWater: always present",
@@ -360,7 +360,7 @@
   },
   {
     "position": "187.5km, 1689m",
-    "location": "bivouac de la cabane du cap de la baitch",
+    "location": "Bivouac de la cabane du cap de la baitch",
     "descriptionFR": "Bivouac à coté de la cabane de berger, il sera de bon ton de demander l'autorisation au berger pour bivouaquer en ces lieux",
     "descriptionEN": "Bivouac next to the shepherd's hut, it will be fashionable to ask permission to the shepherd to bivouac in these places",
     "locatedAtTrailMetre": 187500,
@@ -371,8 +371,8 @@
     }
   },
   {
-    "position": " 188.7km, 1570m ",
-    "location": " bivouac à coté de la cabane d'Ardinet ",
+    "position": "188.7km, 1570m ",
+    "location": "Bivouac à coté de la cabane d'Ardinet",
     "descriptionFR": "A coté de la cabane d'Ardinet, terrain plat le long du court d'eau situé à 150m de la cabane, si les conditions se dégradent, il restera toujours la possibilité de dormir dans la cabane. \nEau : très fréquente",
     "descriptionEN": "Next to the Ardinet hut, flat land along the water court located 150m from the hut, if conditions deteriorate, there will always be the possibility of sleeping in the hut. \nWater: very frequent",
     "locatedAtTrailMetre": 188700,
@@ -383,8 +383,8 @@
     }
   },
   {
-    "position": " 191,1km, 1430m ",
-    "location": " bivouac à coté du refuge de Labérouat ",
+    "position": "191,1km, 1430m ",
+    "location": "Bivouac à coté du refuge de L'Abérouat",
     "descriptionFR": "Le refuge de Labérouat est situé sur le gr10. \nEau: très fréquente",
     "descriptionEN": "",
     "locatedAtTrailMetre": 191100,
@@ -432,7 +432,7 @@
   },
   {
     "position": " 205km, 1515m ",
-    "location": " bivouac de la cabane ruinée d’Udapet-le-Haut ",
+    "location": " bivouac de la cabane ruinée d’Udapet-le-Haut",
     "descriptionFR": "Eau du ruisseau, le bivouac se trouve 500m à l'est du col de Barrancq. Eau: fort risque d'absence",
     "descriptionEN": "Water from the creek, the bivouac is located 500m east of the Col de Barrancq.",
     "locatedAtTrailMetre": 205000,
@@ -681,7 +681,7 @@
   {
     "position": "305.2km, 2150m",
     "location": "Bivouac à coté du refuge des Oulettes de Gaube ",
-    "descriptionFR": "règles bivouac Parc NaturelUne immense zone de bivouac vous attend au pied du Vignemal, pas de feu pour cause de PN, zone herbeuse et humide. \nEau: toujours présente. ",
+    "descriptionFR": "règles bivouac Parc Naturel. Une immense zone de bivouac vous attend au pied du Vignemal, pas de feu pour cause de PN, zone herbeuse et humide. \nEau: toujours présente. ",
     "descriptionEN": "",
     "locatedAtTrailMetre": 305200,
     "camping": true

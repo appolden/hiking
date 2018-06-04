@@ -27,11 +27,6 @@ class NavBar extends Component {
                 Home
               </Link>
             </li>
-            <li className="nav-item">
-              <Link to="/bivvy" className="nav-link">
-                Bivvies
-              </Link>
-            </li>
             <li className="nav-item dropdown">
               <a
                 className="nav-link dropdown-toggle"
@@ -56,6 +51,9 @@ class NavBar extends Component {
                 </Link>
                 <Link to="/trail/gr5" className="dropdown-item">
                   GR5
+                </Link>
+                <Link to="/trail/gr10" className="dropdown-item">
+                  GR10
                 </Link>
               </div>
             </li>

@@ -3,12 +3,12 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './App.css';
 import NavBar from './component/navbar.jsx';
 import BivouacList from './component/bivouac-list.jsx';
-
 import TrailsSummary from './component/trails-summary.jsx';
 import TrailView from './component/trail-view.jsx';
-
 import Gr10Map from './component/gr10-map.jsx';
 import EncodeGpx from './component/encode-gpx.jsx';
+import GpxEdit from './component/gpx-edit.jsx';
+import TrailBuilder from './component/trail-builder.jsx';
 
 class PctTrail extends Component {
   render() {
@@ -54,6 +54,23 @@ class Gr5Trail extends Component {
     );
   }
 }
+
+class Gr10Trail extends Component {
+    render() {
+        const center = { lat: 42.823647, lng: 0.795077 };
+        return (
+            <React.Fragment>
+                <TrailView
+                    dataUrl="/api/activities/gr10"
+                    initialCenter={center}
+                    initialZoom={6}
+                />
+            </React.Fragment>
+        );
+    }
+}
+
+
 //<Route path="/gr10" component={Gr10Map} />
 class App extends Component {
   render() {
@@ -66,10 +83,13 @@ class App extends Component {
             <Route exact path="/trail/hadrianswallpath" component={HwpTrail} />
             <Route exact path="/trail/pacificcresttrail" component={PctTrail} />
             <Route exact path="/trail/gr5" component={Gr5Trail} />
+            <Route exact path="/trail/gr10" component={Gr10Trail} />
             <Route path="/bivvy" component={BivouacList} />
             <Route path="/gr10" component={Gr10Map} />
             <Route path="/gr10-mode/:mode" component={Gr10Map} />
             <Route path="/tools/encodegpx" component={EncodeGpx} />
+            <Route path="/tools/gpx-edit" component={GpxEdit} />
+            <Route path="/tools/trail-builder" component={TrailBuilder} />
             <div className="row">
               <div className="col-12">
                 Icons made by{' '}

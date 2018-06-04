@@ -109,7 +109,22 @@ class TrailsSummary extends Component {
 
           return { trailSummaries: prevState.trailSummaries };
         });
-      });
+          });
+
+      fetch('/api/activities/gr10')
+          .then(response => response.json())
+          .then(response => {
+              this.setState(function (prevState, props) {
+                  let trailSummary = new TrailSummary(
+                      'GR10 - Hendaye to Banyuls-sur-mer',
+                      '/trail/gr10',
+                      response
+                  );
+                  prevState.trailSummaries.push(trailSummary);
+
+                  return { trailSummaries: prevState.trailSummaries };
+              });
+          });
   }
 
   render() {
