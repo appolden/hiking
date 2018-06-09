@@ -14,12 +14,10 @@ app.disable('x-powered-by');
 app.use(express.static(staticPath));
 
 app.get('/api/activities/gr10', (req, res) => {
-    const fromDate = 1528675200;// 11th june 2018
+    const fromDate = 1528588800;// 10th june 2018
     const toDate = 1538352000;// 1st Oct 2018;
 
-    //listAllActivitiesPages(fromDate, toDate, 1, [], res);
-
-    listAllActivitiesPages(1459803862, 1478293462, 1, [], res);
+    listAllActivitiesPages(fromDate, toDate, 1, [], res);
 });
 
 function listAllActivitiesPages(fromDate, toDate, pageNumber, activities, res) {
@@ -36,10 +34,6 @@ function listAllActivitiesPages(fromDate, toDate, pageNumber, activities, res) {
                 return;
             }
 
-           // console.log(err);
-           // console.log(limits);
-           // console.log(payload);
-          //  console.log(`length ${payload.length}`);
             if (payload.length === 0) {
 
                 const hikingActivities = activities.filter(x => x.type === 'Hike');
