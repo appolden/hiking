@@ -115,12 +115,17 @@ class TrailsSummary extends Component {
           .then(response => response.json())
           .then(response => {
               this.setState(function (prevState, props) {
-                  let trailSummary = new TrailSummary(
-                      'GR10 - Hendaye to Banyuls-sur-mer',
-                      '/trail/gr10',
-                      response
-                  );
-                  prevState.trailSummaries.push(trailSummary);
+
+                  if (response.length > 0) {
+                      let trailSummary = new TrailSummary(
+                          'GR10 - Hendaye to Banyuls-sur-mer',
+                          '/trail/gr10',
+                          response
+                      );
+
+                      prevState.trailSummaries.push(trailSummary);
+                  }
+
 
                   return { trailSummaries: prevState.trailSummaries };
               });
